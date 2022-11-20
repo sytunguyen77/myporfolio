@@ -217,7 +217,7 @@ li {
 }
 
 .home__theme {
-    background: url(/images/white.jpg) center/cover no-repeat;
+    background: url(../images/white.jpg) center/cover no-repeat;
 }
 
 /*=======Header=======*/
