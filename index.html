@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!--=============== FAVICON ===============-->
+        <link
+            rel="shortcut icon"
+            href="images/favicon.ico"
+            type="image/x-icon"
+        />
+
+        <!--=============== FONT AWESOME ===============-->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        />
+
+        <!--==================== UNICONS ====================-->
+        <link
+            rel="stylesheet"
+            href="https://unicons.iconscout.com/release/v3.0.6/css/line.css"
+        />
+
+        <!-- =====BOX ICONS===== -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- =====JQUERY CDN===== -->
+        <script
+            src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- =====SCROLL REVEAL===== -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/parallax.css" />
+        <link rel="stylesheet" href="css/preloader.css" />
+
+        <title>Sy Tu || Porfolio</title>
+    </head>
+    <body class="preload">
+        <!--===== LOADER =====-->
+        <div class="loader-wrapper">
+            <span class="loader"><span class="loader-inner"></span></span>
+        </div>
+
+        <!--=======Scroll to top button=======-->
+        <div class="scrollToTop-btn flex-center">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+
+        <!--=======Light/Dark theme button=======-->
+        <div class="theme-btn flex-center">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+        </div>
+
+        <!--=======Header=======-->
+        <header>
+            <div class="nav-bar">
+                <a href="#" class="logo-img"
+                    ><img src="images/logo.png" class="logo" alt="logo"
+                /></a>
+                <div class="navigation">
+                    <div class="nav-items">
+                        <div class="nav-close-btn"></div>
+                        <a class="nav-link" href="#home">Home</a>
+                        <a href="#about" class="nav-link">About</a>
+                        <a href="#skills" class="nav-link">Skills</a>
+                        <a href="#services" class="nav-link">Services</a>
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </div>
+                </div>
+                <div class="nav-menu-btn"></div>
+            </div>
+        </header>
+
+        <!-- =======Home section======= -->
+        <section class="home__theme" id="home">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+            <div class="home flex-center">
+                <div class="home-container">
+                    <div class="media-icons">
+                        <a
+                            href="https://www.linkedin.com/in/sy-tu-nguyen-48831113b/"
+                            ><i class="fab fab fa-linkedin"></i
+                        ></a>
+                        <a href="https://github.com/sytunguyen77/"
+                            ><i class="fab fab fa-github"></i
+                        ></a>
+                        <a href="https://www.facebook.com/sytu.nguyen.98"
+                            ><i class="fab fa-facebook-messenger"></i
+                        ></a>
+                    </div>
+                    <div class="info">
+                        <h2 class="special">Hi, I am Sy Tu</h2>
+                        <div class="home__typing">
+                            <span class="typing">Web Developer</span>
+                        </div>
+                        <p>
+                            I create visually asthetic, responsive and
+                            accessible websites for your business.
+                        </p>
+                        <a href="#contact" class="btn home__button"
+                            >Contact Me <i class="fas fa-arrow-circle-right"></i
+                        ></a>
+                    </div>
+                    <div class="home__img">
+                        <div class="home__content">
+                            <img src="/images/main-img.png" alt="" />
+                            <h2>
+                                <span>Welcome!</span>
+                            </h2>
+                            <a href="#contact">Hire me</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#about" class="scroll-down"
+                    >Scroll Down <i class="fas fa-arrow-down"></i
+                ></a>
+            </div>
+        </section>
+
+        <!--=======About section=======-->
+        <section class="about section" id="about">
+            <div class="container flex-center">
+                <h1 class="section-title-01">About Me</h1>
+                <h2 class="section-title-02">About Me</h2>
+                <div class="content flex-center">
+                    <div class="about-img">
+                        <img src="images/about.png" alt="" />
+                    </div>
+                    <div class="about-info">
+                        <div class="description">
+                            <h3>My name is Sy Tu Nguyen</h3>
+                            <h4>
+                                A <span>Front-End Developer</span> based in
+                                <span>Houston</span>
+                            </h4>
+                            <p>
+                                I design and develop interactive, user-friendly,
+                                and feature-rich websites for customers. I
+                                specialize in building stylish, modern websites,
+                                web services, and online stores. My passion is
+                                to design efficient and high quality websites
+                                that improve the lives of those around me. Check
+                                out my Portfolio 😊
+                            </p>
+                        </div>
+                        <div>
+                            <a href="#" class="btn about-button"
+                                >Download CV <i class="fas fa-download"></i
+                            ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=======Skills section=======-->
+        <section class="skills section" id="skills">
+            <div class="container flex-center">
+                <h1 class="section-title-01">Skills</h1>
+                <h2 class="section-title-02">Skills</h2>
+                <div class="content">
+                    <div class="skills-description">
+                        <h3>Professional Skills</h3>
+                        <p>
+                            With 2+ years of experience in developing and
+                            designing websites, I believe I have the neccessary
+                            skills and knowledge to make your project a success.
+                            I enjoy every step of the design process, from
+                            discussion and collaboration.
+                        </p>
+                    </div>
+
+                    <div class="skills-info">
+                        <div class="card">
+                            <div
+                                class="percent"
+                                style="--clr: #ff4500; --num: 90"
+                            >
+                                <div class="dot"></div>
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2>90<span>%</span></h2>
+                                    <p>Html5</p>
+                                </div>
+                                <img
+                                    class="card-icon"
+                                    src="images/icon-html.png"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div
+                                class="percent"
+                                style="--clr: #192bc2; --num: 85"
+                            >
+                                <div class="dot"></div>
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2>85<span>%</span></h2>
+                                    <p>CSS3</p>
+                                </div>
+                                <img
+                                    class="card-icon"
+                                    src="images/icon-css.png"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div
+                                class="percent"
+                                style="--clr: #fdda0d; --num: 70"
+                            >
+                                <div class="dot"></div>
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2>70<span>%</span></h2>
+                                    <p>Javascript</p>
+                                </div>
+                                <img
+                                    class="card-icon"
+                                    src="images/icon-js.png"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div
+                                class="percent"
+                                style="--clr: #06ccff; --num: 70"
+                            >
+                                <div class="dot"></div>
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2>70<span>%</span></h2>
+                                    <p>Photoshop</p>
+                                </div>
+                                <img
+                                    class="card-icon"
+                                    src="images/icon-ps.png"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=======Services section=======-->
+        <section class="services section" id="services">
+            <div class="container flex-center">
+                <h1 class="section-title-01">Services</h1>
+                <h2 class="section-title-02">Services</h2>
+                <div class="content">
+                    <div class="services-description">
+                        <h3>What I provide</h3>
+                    </div>
+                    <ul class="service-list">
+                        <li class="service-container">
+                            <div class="service-card">
+                                <i class="fas fa-pencil-ruler"></i>
+                                <h3>UI/UX Consultancy</h3>
+                                <div class="learn-more-btn">
+                                    Learn More
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                </div>
+                            </div>
+                            <div class="service-modal flex-center">
+                                <div class="service-modal-body">
+                                    <i class="fas fa-times modal-close-btn"></i>
+                                    <h3>Ui/UX Consultancy</h3>
+                                    <h4>What is UX consulting?</h4>
+                                    <p>
+                                        UX consulting helps companies improve
+                                        their product’s overall usability and
+                                        optimize expenses by implementing the
+                                        right UX processes, methods, and tools.
+                                    </p>
+                                    <h4>What I provide</h4>
+                                    <ul>
+                                        <li>
+                                            <i class="fas fa-check-circle"></i>
+                                            Establish the right UX processes
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle"></i>
+                                            Create exceptional user experiences
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle"></i>
+                                            Creative direction
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle"></i>
+                                            Save resources
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="service-container">
+                            <div class="service-card">
+                                <i class="fas fa-photo-video"></i>
+                                <h3>Branding & Design</h3>
+                                <div class="learn-more-btn">
+                                    Learn More
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                </div>
+                            </div>
+                            <div class="service-modal flex-center">
+                                <div class="service-modal-body">
+                                    <i class="fas fa-times modal-close-btn"></i>
+                                    <h3>Branding & Design</h3>
+                                    <h4>What is Brand & Design?</h4>
+                                    <p>
+                                        Brand Design can be defined as one of
+                                        the crucial marketing practices of
+                                        creating the name, logo, design, and the
+                                        symbolic elements related to the brand
+                                        to create a distinctive identity in
+                                        comparison to the other brands in the
+                                        market and also providing impetus to the
+                                        product differentiation.
+                                    </p>
+                                    <h4>What I provide</h4>
+                                    <ul>
+                                        <li>
+                                            <i class="fas fa-check-circle"></i>
+                                            Logo Design
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle"></i>
+                                            Banner Design
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle"></i>
+                                            Photography
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="service-container">
+                            <div class="service-card">
+                                <i class="fas fa-file-code"></i>
+                                <h3>Web Development</h3>
+                                <div class="learn-more-btn">
+                                    Learn More
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                </div>
+                            </div>
+                            <div class="service-modal flex-center">
+                                <div class="service-modal-body">
+                                    <i class="fas fa-times modal-close-btn"></i>
+                                    <h3>Web Development</h3>
+                                    <h4>What is Web Development?</h4>
+                                    <p>
+                                        Web development services are used to
+                                        design, build, support, and evolve all
+                                        types of web-based software.
+                                    </p>
+                                    <h4>What I provide</h4>
+                                    <ul>
+                                        <li>
+                                            <i class="fas fa-check-circle"></i>
+                                            Web application development
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle"></i>
+                                            Search Engine Optimization services
+                                            (SEO)
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle"></i>
+                                            Get your site ranked highly on
+                                            Google
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle"></i>
+                                            Maintenance
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle"></i>
+                                            Testing
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="service-container">
+                            <div class="service-card">
+                                <i class="fas fa-align-left"></i>
+                                <h3>Web & Ad Design</h3>
+                                <div class="learn-more-btn">
+                                    Learn More
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                </div>
+                            </div>
+                            <div class="service-modal flex-center">
+                                <div class="service-modal-body">
+                                    <i class="fas fa-times modal-close-btn"></i>
+                                    <h3>Web Design</h3>
+                                    <h4>What is Web Design?</h4>
+                                    <p>
+                                        Web design refers to the design of
+                                        websites that are displayed on the
+                                        internet. It usually refers to the user
+                                        experience aspects of website
+                                        development rather than software
+                                        development.
+                                    </p>
+                                    <h4>What I provide</h4>
+                                    <ul>
+                                        <li>
+                                            <i class="fas fa-check-circle"></i>
+                                            Design responsive and adaptive
+                                            websites
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle"></i>
+                                            Focus on simplicty and functionality
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle"></i>
+                                            Structuring and categorizing content
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!--=======Portfolio section=======-->
+        <section class="portfolio section" id="portfolio">
+            <div class="container flex-center">
+                <h1 class="section-title-01">Portfolio</h1>
+                <h2 class="section-title-02">Portfolio</h2>
+                <div class="content">
+                    <div class="portfolio-list">
+                        <div class="img-card-container">
+                            <div class="img-card">
+                                <div class="overlay"></div>
+                                <div class="info">
+                                    <h3>MP3 Player</h3>
+                                    <span>In Progress</span>
+                                </div>
+                                <img src="images/port-img1.jpg" alt="" />
+                            </div>
+                            <div class="porfolio-model flex-center">
+                                <div class="portfolio-model-body">
+                                    <i
+                                        class="fas fa-times portfolio-close-btn"
+                                    ></i>
+                                    <h3>MP3 Player</h3>
+                                    <img src="images/port-img1.jpg" alt="" />
+                                    <p>Built with HTML, CSS and Javascript</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="img-card-container">
+                            <div class="img-card">
+                                <div class="overlay"></div>
+                                <div class="info">
+                                    <h3>Ecommerce</h3>
+                                    <span>In Progress</span>
+                                </div>
+                                <img src="images/port-img2.jpg" alt="" />
+                            </div>
+                            <div class="porfolio-model flex-center">
+                                <div class="portfolio-model-body">
+                                    <i
+                                        class="fas fa-times portfolio-close-btn"
+                                    ></i>
+                                    <h3>Ecommerce</h3>
+                                    <img src="images/port-img2.jpg" alt="" />
+                                    <p>Built with HTML, CSS and Javascript</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="img-card-container">
+                            <div class="img-card">
+                                <div class="overlay"></div>
+                                <div class="info">
+                                    <h3>Gaming Website</h3>
+                                    <span>In Progress</span>
+                                </div>
+                                <img src="images/port-img3.jpg" alt="" />
+                            </div>
+                            <div class="porfolio-model flex-center">
+                                <div class="portfolio-model-body">
+                                    <i
+                                        class="fas fa-times portfolio-close-btn"
+                                    ></i>
+                                    <h3>Gaming Website</h3>
+                                    <img src="images/port-img3.jpg" alt="" />
+                                    <p>Built with HTML, CSS and Javascript</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="img-card-container">
+                            <div class="img-card">
+                                <div class="overlay"></div>
+                                <div class="info">
+                                    <h3>Web Development</h3>
+                                    <span>In Progress</span>
+                                </div>
+                                <img src="images/port-img4.jpg" alt="" />
+                            </div>
+                            <div class="porfolio-model flex-center">
+                                <div class="portfolio-model-body">
+                                    <i
+                                        class="fas fa-times portfolio-close-btn"
+                                    ></i>
+                                    <h3>Web Development</h3>
+                                    <img src="images/port-img4.jpg" alt="" />
+                                    <p>Built with HTML, CSS and Javascript</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="img-card-container">
+                            <div class="img-card">
+                                <div class="overlay"></div>
+                                <div class="info">
+                                    <h3>Shopping Website</h3>
+                                    <span>In Progress</span>
+                                </div>
+                                <img src="images/port-img5.jpg" alt="" />
+                            </div>
+                            <div class="porfolio-model flex-center">
+                                <div class="portfolio-model-body">
+                                    <i
+                                        class="fas fa-times portfolio-close-btn"
+                                    ></i>
+                                    <h3>Shopping Website</h3>
+                                    <img src="images/port-img5.jpg" alt="" />
+                                    <p>Built with HTML, CSS and Javascript</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="img-card-container">
+                            <div class="img-card">
+                                <div class="overlay"></div>
+                                <div class="info">
+                                    <h3>Interface Design</h3>
+                                    <span>In Progress</span>
+                                </div>
+                                <img src="images/port-img6.jpg" alt="" />
+                            </div>
+                            <div class="porfolio-model flex-center">
+                                <div class="portfolio-model-body">
+                                    <i
+                                        class="fas fa-times portfolio-close-btn"
+                                    ></i>
+                                    <h3>Interface Design</h3>
+                                    <img src="images/port-img6.jpg" alt="" />
+                                    <p>Built with HTML, CSS and Javascript</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--=======Get-in-touch=======-->
+            <div class="get-in-touch sub-section">
+                <div class="container">
+                    <div class="content flex-center">
+                        <div class="contact-card flex-center">
+                            <div class="title">
+                                <h4>Let's Talk</h4>
+                                <h3>About Your</h3>
+                                <h2>Next Project</h2>
+                            </div>
+                            <div class="contact-btn">
+                                <a href="" class="btn"
+                                    >Get In Touch
+                                    <i class="fas fa-paper-plane"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=======Contact section=======-->
+        <section class="contact section" id="contact">
+            <div class="container flex-center">
+                <h1 class="section-title-01">Contact Me</h1>
+                <h2 class="section-title-02">Contact Me</h2>
+                <div class="content">
+                    <div class="contact-left">
+                        <h2>Reach out to me</h2>
+                        <ul class="contact-list">
+                            <li>
+                                <h3 class="item-title">
+                                    <i class="fas fa-phone"></i> Phone
+                                </h3>
+                                <span>253-285-2840</span>
+                            </li>
+                            <li>
+                                <h3 class="item-title">
+                                    <i class="fas fa-envelope"></i> Email
+                                    Address
+                                </h3>
+                                <span
+                                    ><a href="mailto:martian@email.com"
+                                        >sytunguyen77@gmail.com</a
+                                    ></span
+                                >
+                            </li>
+                            <li>
+                                <h3 class="item-title">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Official Address
+                                </h3>
+                                <span>Houston, Texas</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contact-right">
+                        <p>
+                            I'm always open to discussing product<br /><span
+                                >design work or partnerships.</span
+                            >
+                        </p>
+                        <form action="" class="contact-form">
+                            <div class="first-row">
+                                <input type="text" placeholder="Name" />
+                            </div>
+                            <div class="second-row">
+                                <input type="email" placeholder="Email" />
+                                <input type="text" placeholder="Subject" />
+                            </div>
+                            <div class="third-row">
+                                <textarea
+                                    name="message"
+                                    id=""
+                                    rows="7"
+                                    placeholder="Message"
+                                ></textarea>
+                            </div>
+                            <button class="btn" type="submit">
+                                Send Message
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=======Footer=======-->
+        <footer>
+            <div class="footer-container">
+                <div class="hr"></div>
+                <div class="hr"></div>
+                <div class="follow group">
+                    <h3>Sy Tu</h3>
+                    <ul>
+                        <li>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-github-alt"></i></a>
+                        </li>
+                        <li>
+                            <a href=""
+                                ><i class="fab fa-facebook-messenger"></i
+                            ></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copyright group">
+                <p>© <span id="date"></span> by Sy Tu. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <!--===== TYPING ANIMATION =====-->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+            referrerpolicy="no-referrer"
+        ></script>
+
+        <!--=======External scripts=======-->
+        <script src="js/swiper-bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
