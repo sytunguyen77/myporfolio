@@ -216,10 +216,6 @@ li {
     background: var(--scroll-thumb-hover-color);
 }
 
-.home__theme {
-    background: url(../images/white.jpg) center/cover no-repeat;
-}
-
 /*=======Header=======*/
 header {
     z-index: 99999;
@@ -308,7 +304,6 @@ header.sticky .nav-bar {
 
 /*=======Home section=======*/
 .home {
-    background: url(../img/white.jpg) center/cover no-repeat;
     overflow: hidden;
     position: relative;
     max-width: 1250px;
@@ -317,6 +312,11 @@ header.sticky .nav-bar {
     margin-right: auto;
     padding: 4rem 2rem;
     flex-direction: column;
+}
+
+/* For White Background */
+.home__theme {
+    background: url(../images/white.jpg) center/cover no-repeat;
 }
 
 .home .home-container {
@@ -376,6 +376,11 @@ header.sticky .nav-bar {
 }
 
 .btn:hover {
+    transform: scale(1.1);
+}
+
+.about-button:hover {
+    background: var(--hover-color);
     transform: scale(1.1);
 }
 
@@ -1215,6 +1220,9 @@ footer a {
     margin-top: 50px;
 }
 
+/*=======Media query max-width 390px=======*/
+@media screen and (max-width: 390px) {
+}
 /*=======Media query max-width 730px=======*/
 @media screen and (max-width: 730px) {
     .home-container {
@@ -1222,7 +1230,7 @@ footer a {
     }
 
     .home-container .home__img {
-        transform: translate(70px, -527px);
+        transform: translate(50px, -500px);
     }
 
     .home .scroll-down {
@@ -1232,12 +1240,12 @@ footer a {
     }
 }
 /*=======Media query max-width 900px=======*/
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
     /* Home */
 
     .home-container .home__img {
-        max-width: 18rem;
-        height: 18rem;
+        width: 16rem;
+        height: 16rem;
     }
 
     .home__img::before {
