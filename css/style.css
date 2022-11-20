@@ -1240,7 +1240,7 @@ footer a {
     }
 }
 /*=======Media query max-width 900px=======*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     /* Home */
 
     .home-container .home__img {
