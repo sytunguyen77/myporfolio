@@ -1444,7 +1444,10 @@ footer a {
         width: 200px;
         height: 200px;
     }
+    .home-container .home-img {
+        position: absolute;
+    }
     .home-container .home-img .imgBx {
-        transform: translate(60px, -180px);
+        transform: translateX(60px);
     }
 }
