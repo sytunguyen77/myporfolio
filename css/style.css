@@ -79,10 +79,6 @@
     color: rgba(255, 255, 255, 0.75);
 }
 
-.dark-theme .content .card .percent svg circle {
-    stroke: #191919;
-}
-
 .dark-theme .home-img .imgBx::before {
     background: linear-gradient(
         transparent,
@@ -155,6 +151,7 @@ li {
     position: fixed;
     right: 0;
     top: 100px;
+
     background: var(--transparent-color-01);
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
@@ -663,6 +660,11 @@ header.sticky .nav-bar {
     align-items: center;
     border-bottom: 3px solid #0049b7;
     box-shadow: var(--box-shadow);
+    transition: 1s;
+}
+
+.content .card:hover {
+    transform: translateY(-20px);
 }
 
 .content .card .percent {
@@ -799,6 +801,10 @@ header.sticky .nav-bar {
     border-radius: 6px;
     box-shadow: var(--box-shadow);
     height: 285px;
+    transition: 1s;
+}
+
+.service-card:hover {
 }
 
 .service-card > i {
