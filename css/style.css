@@ -89,6 +89,10 @@
     );
 }
 
+.dark-theme .content .card .percent svg circle {
+    stroke: #000;
+}
+
 /* ============ BASE ============ */
 * {
     margin: 0;
@@ -811,6 +815,14 @@ header.sticky .nav-bar {
     margin-bottom: 50px;
 }
 
+.service-container {
+    transition: 1s;
+}
+
+.service-container:hover {
+    transform: translateY(-20px);
+}
+
 .service-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
@@ -819,7 +831,7 @@ header.sticky .nav-bar {
     gap: 20px;
 }
 
-.service-card {
+.content .service-card {
     background: var(--card-bg-color);
     border-bottom: 3px solid var(--second-color);
     padding: 50px;
@@ -827,9 +839,6 @@ header.sticky .nav-bar {
     box-shadow: var(--box-shadow);
     height: 285px;
     transition: 1s;
-}
-
-.service-card:hover {
 }
 
 .service-card > i {
