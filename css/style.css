@@ -1438,6 +1438,18 @@ footer a {
         font-size: 0.8rem;
     }
 }
+@media screen and (max-width: 400px) {
+    .home-container .home-img {
+        width: 250px;
+        height: 230px;
+    }
+    .home-container .home-img {
+        position: absolute;
+    }
+    .home-container .home-img .imgBx {
+        /* transform: translateX(60px); */
+    }
+}
 
 @media screen and (max-width: 350px) {
     .home-container .home-img {
@@ -1448,6 +1460,6 @@ footer a {
         position: absolute;
     }
     .home-container .home-img .imgBx {
-        transform: translateX(60px);
+        /* transform: translateX(60px); */
     }
 }
