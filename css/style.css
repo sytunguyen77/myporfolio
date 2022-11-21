@@ -156,6 +156,7 @@ li {
     right: 0;
     top: 100px;
     background: var(--transparent-color-01);
+    -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     width: 50px;
     height: 50px;
@@ -835,6 +836,7 @@ header.sticky .nav-bar {
     top: 0;
     left: 0;
     background: var(--bg-transparent-color);
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     visibility: hidden;
     opacity: 0;
@@ -962,6 +964,7 @@ header.sticky .nav-bar {
     top: 0;
     left: 0;
     background: var(--transparent-color-01);
+    -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     visibility: hidden;
     opacity: 0;
@@ -1265,6 +1268,7 @@ footer a {
     .nav-close-btn {
         position: absolute;
         background: url(../images/close-btn.png) no-repeat;
+        -webkit-filter: var(--color-filter);
         filter: var(--color-filter);
         background-size: 12px;
         background-position: center;
