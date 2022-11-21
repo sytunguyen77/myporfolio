@@ -1415,11 +1415,10 @@ footer a {
     .home-container .home-img {
         width: 250px;
         height: 250px;
-        transform: translate(80px, -150px);
     }
 
     .home-container .home-img .imgBx {
-        transform: translate(80px, -10px);
+        transform: translate(80px, -150px);
     }
 
     .media-icons {
