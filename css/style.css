@@ -689,7 +689,7 @@ header.sticky .nav-bar {
     width: 100%;
     height: 100%;
     fill: transparent;
-    stroke-width: 2;
+    stroke-width: 4;
     stroke: #2222;
     transform: translate(5px, 5px);
 }
@@ -701,6 +701,32 @@ header.sticky .nav-bar {
     opacity: 0;
     animation: fadeIn 1s linear forwards;
     animation-delay: 2.5s;
+}
+
+/* For Safari and Firefox (negative dashoffset doesn't work in these browsers)*/
+/* Formula: calc(440 - (440 * var(--num)) / 100) */
+.content .card .percent svg circle.dash1 {
+    stroke-dasharray: 440;
+    stroke-dashoffset: 44;
+}
+
+.content .card .percent svg circle.dash2 {
+    stroke-dasharray: 440;
+    stroke-dashoffset: 66;
+}
+
+.content .card .percent svg circle.dash3 {
+    stroke-dasharray: 440;
+    stroke-dashoffset: 132;
+}
+
+.content .card .percent svg circle.dash4 {
+    stroke-dasharray: 440;
+    stroke-dashoffset: 132;
+}
+
+.content .card .percent svg .round {
+    stroke-dashoffset: 92;
 }
 @keyframes fadeIn {
     0% {
@@ -737,7 +763,6 @@ header.sticky .nav-bar {
     height: 10px;
     border-radius: 50%;
     background: var(--clr);
-
     box-shadow: 0 0 10px var(--clr), 0 0 30px var(--clr);
 }
 
@@ -1420,17 +1445,19 @@ footer a {
     }
 
     .home-container .home-img {
-        position: absolute;
-    }
-
-    .home-container .home-img {
         width: 250px;
         height: 250px;
     }
 
     .home-container .home-img .imgBx {
-        -webkit-transform: translate(80px, -150px);
-        transform: translate(80px, -150px);
+        position: absolute;
+        transform: translate(80px, -500px);
+    }
+
+    .home .scroll-down {
+        position: absolute;
+        -webkit-transform: translateY(150px);
+        transform: translateY(150px);
     }
 
     .media-icons {
@@ -1465,8 +1492,5 @@ footer a {
     .home-container .home-img {
         width: 200px;
         height: 200px;
-    }
-    .home-container .home-img {
-        position: absolute;
     }
 }
