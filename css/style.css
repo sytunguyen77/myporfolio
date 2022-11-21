@@ -1414,7 +1414,7 @@ footer a {
     }
 
     .home-container .home-img {
-        position: absolute;
+        /* position: absolute; */
     }
 
     .home-container .home-img {
@@ -1423,8 +1423,9 @@ footer a {
     }
 
     .home-container .home-img .imgBx {
-        -webkit-transform: translate(80px, -150px);
-        transform: translate(80px, -150px);
+        position: absolute;
+        -webkit-transform: translate(80px, -10px);
+        transform: translate(80px, -500px);
     }
 
     .media-icons {
