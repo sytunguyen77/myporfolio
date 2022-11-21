@@ -815,14 +815,6 @@ header.sticky .nav-bar {
     margin-bottom: 50px;
 }
 
-.service-container {
-    transition: 1s;
-}
-
-.service-container:hover {
-    transform: translateY(-20px);
-}
-
 .service-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
@@ -831,14 +823,13 @@ header.sticky .nav-bar {
     gap: 20px;
 }
 
-.content .service-card {
+.service-card {
     background: var(--card-bg-color);
     border-bottom: 3px solid var(--second-color);
     padding: 50px;
     border-radius: 6px;
     box-shadow: var(--box-shadow);
     height: 285px;
-    transition: 1s;
 }
 
 .service-card > i {
