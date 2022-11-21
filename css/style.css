@@ -700,6 +700,32 @@ header.sticky .nav-bar {
     animation: fadeIn 1s linear forwards;
     animation-delay: 2.5s;
 }
+
+/* For Safari and Firefox (negative dashoffset doesn't work in these browsers)*/
+/* Formula: calc(440 - (440 * var(--num)) / 100) */
+.content .card .percent svg circle.dash1 {
+    stroke-dasharray: 440;
+    stroke-dashoffset: 44;
+}
+
+.content .card .percent svg circle.dash2 {
+    stroke-dasharray: 440;
+    stroke-dashoffset: 66;
+}
+
+.content .card .percent svg circle.dash3 {
+    stroke-dasharray: 440;
+    stroke-dashoffset: 132;
+}
+
+.content .card .percent svg circle.dash4 {
+    stroke-dasharray: 440;
+    stroke-dashoffset: 132;
+}
+
+.content .card .percent svg .round {
+    stroke-dashoffset: 92;
+}
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -735,7 +761,6 @@ header.sticky .nav-bar {
     height: 10px;
     border-radius: 50%;
     background: var(--clr);
-
     box-shadow: 0 0 10px var(--clr), 0 0 30px var(--clr);
 }
 
