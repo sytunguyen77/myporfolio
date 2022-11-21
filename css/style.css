@@ -1278,6 +1278,7 @@ footer a {
 
     .nav-menu-btn {
         background: url(../images/menu-btn.png) no-repeat;
+        -webkit-filter: var(--color-filter);
         filter: var(--color-filter);
         background-size: 30px;
         background-position: center;
@@ -1418,6 +1419,7 @@ footer a {
     }
 
     .home-container .home-img .imgBx {
+        -webkit-transform: translate(80px, -150px);
         transform: translate(80px, -150px);
     }
 
