@@ -1414,18 +1414,18 @@ footer a {
     }
 
     .home-container .home-img {
-        /* position: absolute; */
-    }
-
-    .home-container .home-img {
         width: 250px;
         height: 250px;
     }
 
     .home-container .home-img .imgBx {
         position: absolute;
-        -webkit-transform: translate(80px, -10px);
         transform: translate(80px, -500px);
+    }
+
+    .home .scroll-down {
+        position: absolute;
+        transform: translateY(150px);
     }
 
     .media-icons {
