@@ -592,8 +592,6 @@ header.sticky .nav-bar {
 
 .about-img {
     position: relative;
-    object-fit: cover;
-    width: 100%;
 }
 
 .about-img img {
