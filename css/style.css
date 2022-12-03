@@ -592,13 +592,16 @@ header.sticky .nav-bar {
 
 .about-img {
     position: relative;
+    object-fit: cover;
+    width: 100%;
 }
 
 .about-img img {
     max-width: 100%;
-    min-width: 500px;
+    height: 500px;
     border-radius: 10px;
-    width: 500px;
+    object-fit: cover;
+    width: 400px;
 }
 
 .about-info .description {
