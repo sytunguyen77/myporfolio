@@ -351,10 +351,12 @@ header.sticky .nav-bar {
     color: var(--second-color);
     font-size: 1.5em;
     margin: 10px 0;
+    transition: 0.5s;
 }
 
 .home-container .media-icons a:hover {
     color: var(--hover-color);
+    transform: rotate(360deg);
 }
 
 .home-container .info h2 {
