@@ -93,6 +93,10 @@
     stroke: #000;
 }
 
+.dark-theme .home-container .media-icons a {
+    color: var(--second-color);
+    background: #102048;
+}
 /* ============ BASE ============ */
 * {
     margin: 0;
@@ -351,6 +355,13 @@ header.sticky .nav-bar {
     color: var(--second-color);
     font-size: 1.5em;
     margin: 10px 0;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #d7d7d7;
     transition: 0.5s;
 }
 
