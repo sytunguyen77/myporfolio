@@ -97,6 +97,19 @@
     color: var(--second-color);
     background: #102048;
 }
+
+.dark-theme .portfolio-view {
+    color: #fff;
+}
+
+.dark-theme .portfolio-view h3:hover {
+    background: #1aeeef;
+    color: #050e2d;
+    box-shadow: 0 0 10px #1aeeef;
+    border-radius: 5px;
+    width: 115px;
+    transition: 1s;
+}
 /* ============ BASE ============ */
 * {
     margin: 0;
@@ -1058,6 +1071,20 @@ header.sticky .nav-bar {
     border-radius: 10px;
 }
 
+.portfolio-view {
+    color: #0e2431;
+    display: inline-block;
+}
+
+.portfolio-view h3:hover {
+    background: #1aeeef;
+    color: #050e2d;
+    box-shadow: 0 0 10px #1aeeef;
+    border-radius: 5px;
+    width: 115px;
+    transition: 1s;
+}
+
 /*=======Get-in-touch=======*/
 .get-in-touch {
     margin-top: 70px;
@@ -1354,7 +1381,11 @@ footer a {
 
     .about-img img {
         min-width: 0;
-        width: 600px;
+        width: 400px;
+        height: 400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .about-info {
