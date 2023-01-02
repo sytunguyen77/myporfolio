@@ -344,7 +344,7 @@ header.sticky .nav-bar {
     flex-direction: column;
 }
 
-/* For White Background */
+/* ======For White Background======= */
 .home__theme {
     background: url(../images/white.jpg) center/cover no-repeat;
 }
@@ -503,32 +503,12 @@ header.sticky .nav-bar {
     object-fit: cover;
     width: calc(100% - 20px);
     height: calc(100% - 20px);
-    /* filter: grayscale(1); */
+    transition: all 0.5s;
 }
 
-/* .box {
-    background: url(../images/main.png);
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center center;
-    height: 400px;
-    width: 400px;
-    box-shadow: 0 20px 5px 5px rgba(0, 0, 0, 0.2);
-    animation: animate 5s ease-in-out infinite;
-    transition: all 1s ease-in-out;
+.home-img .imgBx img:hover {
+    filter: grayscale(1);
 }
-
-@keyframes animate {
-    0% {
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-    }
-    50% {
-        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
-    }
-    100% {
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-    }
-} */
 
 /* home scroll style */
 .home .scroll-down {
