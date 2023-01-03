@@ -10,7 +10,7 @@
     --hover-color: #614fd0;
 
     /*=======Background colors=======*/
-    --body-bg-color: #fefefe;
+    --body-bg-color: #f8f8f8;
     --card-bg-color: #fff;
     --modal-bg-color: #fff;
     --bg-transparent-color: rgba(0, 0, 0, 0.1);
@@ -89,13 +89,26 @@
     );
 }
 
-.dark-theme .content .card .percent svg circle {
-    stroke: #000;
-}
-
 .dark-theme .home-container .media-icons a {
     color: var(--second-color);
-    background: #102048;
+    background: var(--card-bg-color);
+}
+
+.dark-theme .toggle-btn {
+    color: hsl(0, 0%, 100%);
+}
+
+.dark-theme .toggle-btn.active {
+    color: hsl(0, 0%, 12%);
+}
+
+.dark-theme .skill-card {
+    background: var(--card-bg-color);
+    box-shadow: 10px 10px 40px hsla(0, 0%, 0%, 0.4);
+}
+
+.dark-theme .skill-card .tooltip {
+    box-shadow: 10px 10px 40px hsla(0, 0%, 0%, 0.4);
 }
 
 .dark-theme .portfolio-view {
@@ -610,6 +623,23 @@ header.sticky .nav-bar {
     max-width: 600px;
 }
 
+.about-info .wave {
+    display: inline-block;
+    animation: animate-wave 500ms infinite ease-in-out;
+}
+
+@keyframes animate-wave {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
 .about-info .description h3 {
     font-size: 2em;
     font-weight: 600;
@@ -639,8 +669,15 @@ header.sticky .nav-bar {
     width: 100%;
 }
 
+.skills .container .skills-description span {
+    color: var(--second-color);
+}
+
 .skills-description {
     max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: center;
     margin-bottom: 50px;
 }
 
@@ -649,94 +686,79 @@ header.sticky .nav-bar {
     margin-bottom: 5px;
 }
 
-.skills-info {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 40px;
-}
-
-.content .card {
-    position: relative;
-    width: 220px;
-    height: 250px;
-    background: #fff;
-    border-radius: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 3px solid #0049b7;
-    box-shadow: var(--box-shadow);
-    transition: 1s;
-}
-
-.content .card:hover {
-    transform: translateY(-20px);
-}
-
-.content .card .percent {
-    position: relative;
-    width: 150px;
-    height: 150px;
-}
-
-.content .card .card-icon {
+.skills-toggle button {
     display: block;
-    margin: auto;
+    background: none;
+    border: none;
+    font: inherit;
 }
 
-.content .card .percent svg {
+.skills-toggle {
+    background: var(--card-bg-color);
     position: relative;
-    width: 150px;
-    height: 150px;
-    transform: rotate(270deg);
+    width: max-content;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 100px;
+    box-shadow: 10px 10px 40px hsla(0, 0%, 0%, 0.15);
+    z-index: 1;
+    margin-bottom: 50px;
 }
 
-.content .card .percent svg circle {
-    width: 100%;
-    height: 100%;
-    fill: transparent;
-    stroke-width: 4;
-    stroke: #2222;
-    transform: translate(5px, 5px);
+.skills-toggle::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    width: 92px;
+    background: var(--second-color);
+    border-radius: 100px;
+    transition: 0.25s ease-in-out;
+    z-index: -1;
 }
 
-.content .card .percent svg circle:nth-child(2) {
-    stroke: var(--clr);
-    stroke-dasharray: 440;
-    stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
-    opacity: 0;
-    animation: fadeIn 1s linear forwards;
-    animation-delay: 2.5s;
+.skills-toggle.active::before {
+    left: 97px;
+    width: 94px;
 }
 
-/* For Safari and Firefox (negative dashoffset doesn't work in these browsers)*/
-/* Formula: calc(440 - (440 * var(--num)) / 100) */
-.content .card .percent svg circle.dash1 {
-    stroke-dasharray: 440;
-    stroke-dashoffset: 44;
+.toggle-btn {
+    color: hsl(0, 0%, 19%);
+    padding: 5px 25px;
+    transition: 0.25s ease-in-out;
+    font-weight: 700 !important;
 }
 
-.content .card .percent svg circle.dash2 {
-    stroke-dasharray: 440;
-    stroke-dashoffset: 66;
+.toggle-btn.active {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
 }
 
-.content .card .percent svg circle.dash3 {
-    stroke-dasharray: 440;
-    stroke-dashoffset: 132;
+.skills-box.active .skills-list,
+.skills-box .tools-list {
+    display: none;
 }
 
-.content .card .percent svg circle.dash4 {
-    stroke-dasharray: 440;
-    stroke-dashoffset: 132;
+.skills-box.active .skills-list,
+.skills-box .tools-list {
+    display: none;
 }
 
-.content .card .percent svg .round {
-    stroke-dashoffset: 92;
+.skills-box .skills-list,
+.skills-box.active .tools-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+    gap: 15px;
+    animation: fadeIn 0.5s ease-out forwards;
 }
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -745,69 +767,39 @@ header.sticky .nav-bar {
         opacity: 1;
     }
 }
-.dot {
-    position: absolute;
-    z-index: 10;
-    inset: 5px;
-    transform: rotate(calc(3.6deg * var(--num)));
-    /* 360deg / 100 = 3.6 */
-    animation: animateDot 2s linear forwards;
-}
-@keyframes animateDot {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(calc(3.6deg * var(--num)));
-    }
+
+.skill-card {
+    position: relative;
+    background: hsl(0, 0%, 100%);
+    width: 80px;
+    height: 80px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    box-shadow: 10px 10px 40px hsla(0, 0%, 0%, 0.1);
+    cursor: help;
 }
 
-.dot::before {
-    content: "";
+.skill-card .tooltip {
     position: absolute;
-    top: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: var(--clr);
-    box-shadow: 0 0 10px var(--clr), 0 0 30px var(--clr);
-}
-
-.number {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    opacity: 0;
-    animation: fadeIn 1s linear forwards;
-    animation-delay: 2.5s;
-}
-
-.number h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #0e2431;
+    top: -40px;
+    background: var(--second-color);
+    min-width: max-content;
+    font-size: 15px;
     font-weight: 700;
-    font-size: 2.5em;
+    padding: 5px 10px;
+    border-radius: 4px;
+    box-shadow: 10px 10px 40px hsla(0, 0%, 0%, 0.1);
+    transform: translateY(-10px);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.25s ease-in-out;
+    z-index: 1;
 }
 
-.number h2 span {
-    font-weight: 300;
-    color: #0e2431;
-    font-size: 0.5em;
-}
-
-.number p {
-    font-weight: 300;
-    font-size: 0.75em;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #070a1c;
+.skill-card:hover .tooltip {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 /*=======Services section=======*/

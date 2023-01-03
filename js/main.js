@@ -154,6 +154,24 @@ navItems.forEach((navItem) => {
     });
 });
 
+//Skills toggle
+const elemToggleFunc = function (elem) {
+    elem.classList.toggle("active");
+};
+const toggleBtnBox = document.querySelector("[data-toggle-box]");
+const toggleBtns = document.querySelectorAll("[data-toggle-btn]");
+const skillsBox = document.querySelector("[data-skills-box]");
+
+for (let i = 0; i < toggleBtns.length; i++) {
+    toggleBtns[i].addEventListener("click", function () {
+        elemToggleFunc(toggleBtnBox);
+        for (let i = 0; i < toggleBtns.length; i++) {
+            elemToggleFunc(toggleBtns[i]);
+        }
+        elemToggleFunc(skillsBox);
+    });
+}
+
 //Scroll reveal animations
 //Common reveal options to create reveal animations
 ScrollReveal({
@@ -192,7 +210,7 @@ ScrollReveal().reveal(".about .professional-list li", {
     interval: 200,
 });
 ScrollReveal().reveal(
-    ".skills-description, .services-description, .contact-card, .client-swiper, .contact-left h2, .skills-info",
+    ".skills-description, .services-description, .contact-card, .client-swiper, .contact-left h2, .skills-box, .skills-toggle",
     { delay: 700, origin: "left" }
 );
 ScrollReveal().reveal(
