@@ -68,11 +68,11 @@
 }
 
 .dark-theme .number h2 {
-    color: #fff;
+    color: var(--first-color);
 }
 
 .dark-theme .number h2 span {
-    color: #fff;
+    color: var(--first-color);
 }
 
 .dark-theme .number p {
@@ -928,66 +928,92 @@ header.sticky .nav-bar {
 
 .portfolio-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
     max-width: 100%;
-    gap: 35px;
+    gap: 20px;
     margin: 0 auto;
 }
 
-.portfolio-list .img-card {
-    position: relative;
-    max-width: 100%;
-    height: 290px;
-    border-radius: 10px;
-    box-shadow: var(--box-shadow);
+.portfolio-item {
+    background: var(--card-bg-color);
+    border-bottom: 3px solid var(--second-color);
+    border-radius: 6px;
+    box-shadow: 0px 10px 28px -6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
     overflow: hidden;
-    cursor: pointer;
 }
-
-.portfolio-list .img-card .overlay {
-    transition: 1s ease;
+.portfolio-item:hover {
+    box-shadow: 0px 30px 40px -6px rgba(0, 0, 0, 0.1);
 }
-
-.portfolio-list .img-card:hover .overlay {
-    z-index: 777;
+.portfolio-item .portfolio-image {
+    transition: all 0.3s ease-in;
+    position: relative;
+    height: 330px;
+    overflow: hidden;
+}
+.portfolio-item .portfolio-image::before {
+    content: "";
     position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-}
-
-.portfolio-list .img-card .info {
-    z-index: 777;
-    position: absolute;
-    bottom: 0;
     left: 0;
-    margin: 20px;
-    color: #fff;
-    transform: translateY(20px);
-    opacity: 0;
-    transition: 0.5s ease;
-}
-
-.portfolio-list .img-card:hover .info {
-    transform: translateY(0);
-    opacity: 1;
-}
-
-.portfolio-list .img-card .info h3 {
-    font-size: 1.5em;
-}
-
-.portfolio-list .img-card .info span {
-    font-size: 1.2em;
-}
-
-.portfolio-list .img-card img {
+    top: 0;
     width: 100%;
     height: 100%;
+    background: #18191f;
+    opacity: 0;
+    transition: ease-out 0.3s;
+    transform: translateY(300px);
+}
+
+.portfolio-item:hover .portfolio-image::before {
+    opacity: 0.5;
+    transform: translateY(0px);
+}
+.portfolio-item .portfolio-image img {
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    height: 330px;
     object-fit: cover;
 }
 
+.portfolio-item .portfolio-content {
+    padding: 25px 25px;
+}
+.portfolio-item .portfolio-content h3 {
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 30px;
+}
+.portfolio-item .portfolio-content span {
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 19px;
+    color: var(--third-color);
+}
+.portfolio-item .portfolio-content .btn-view {
+    display: inline-block;
+    padding: 7px 25px;
+    border-radius: 50px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.813rem;
+    line-height: 19px;
+    color: var(--second-color);
+    transition: all 0.3s ease-in-out;
+    font-weight: 400;
+    border: 1px solid var(--second-color);
+}
+.portfolio-item:hover .portfolio-content .btn-view {
+    color: #fff;
+    background: var(--second-color);
+}
+.portfolio-view.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* model */
 .porfolio-model {
     z-index: 999999;
     position: fixed;
@@ -1044,18 +1070,38 @@ header.sticky .nav-bar {
     border-radius: 10px;
 }
 
-.portfolio-view {
-    color: #0e2431;
-    display: inline-block;
+.portfolio-model-content h3 {
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 30px;
+    margin-bottom: 15px;
 }
 
-.portfolio-view h3:hover {
-    background: #1aeeef;
-    color: #050e2d;
-    box-shadow: 0 0 10px #1aeeef;
-    border-radius: 5px;
-    width: 115px;
-    transition: 1s;
+.portfolio-model-content .requirements {
+    font-weight: 400;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 19px;
+    margin-bottom: 15px;
+}
+
+.portfolio-model-content ul li {
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 19px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.portfolio-model-content li span {
+    font-weight: 600;
+}
+
+.portfolio-model-content li a {
+    color: var(--second-color);
+    text-decoration: underline;
 }
 
 /*=======Get-in-touch=======*/

@@ -38,15 +38,15 @@ var typed = new Typed(".typing", {
 
 //Portfolio section - Modal
 const portfolioModals = document.querySelectorAll(".porfolio-model");
-const imgCards = document.querySelectorAll(".img-card");
+const portfolioItem = document.querySelectorAll(".portfolio-item");
 const portfolioCloseBtns = document.querySelectorAll(".portfolio-close-btn");
 
 var portfolioModal = function (modalClick) {
     portfolioModals[modalClick].classList.add("active");
 };
 
-imgCards.forEach((imgCard, i) => {
-    imgCard.addEventListener("click", () => {
+portfolioItem.forEach((portfolioItem, i) => {
+    portfolioItem.addEventListener("click", () => {
         portfolioModal(i);
     });
 });
@@ -214,8 +214,12 @@ ScrollReveal().reveal(
     { delay: 700, origin: "left" }
 );
 ScrollReveal().reveal(
-    ".experience-card, .service-card, .education, .portfolio .img-card",
-    { delay: 800, origin: "bottom", interval: 200 }
+    ".experience-card, .service-card, .education, .portfolio .portfolio-item",
+    {
+        delay: 800,
+        origin: "bottom",
+        interval: 200,
+    }
 );
 ScrollReveal().reveal("footer .group", {
     delay: 500,
