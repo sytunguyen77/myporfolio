@@ -686,6 +686,9 @@ header.sticky .nav-bar {
     margin-bottom: 5px;
 }
 
+.skills-description p {
+    color: var(--third-color);
+}
 .skills-toggle button {
     display: block;
     background: none;
