@@ -1013,25 +1013,7 @@ header.sticky .nav-bar {
     align-items: center;
 }
 
-/* Swiper */
-.swiper-button-next:after,
-.swiper-button-prev:after {
-    content: "";
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-    color: var(--second-color);
-    font-size: 3em;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-    color: var(--second-color);
-    font-size: 3em;
-}
-
-/* Modal View */
+/* Modal View for Portfolio */
 .porfolio-model {
     z-index: 999999;
     position: fixed;
