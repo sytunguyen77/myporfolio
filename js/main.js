@@ -59,20 +59,20 @@ portfolioCloseBtns.forEach((portfolioCloseBtn) => {
     });
 });
 
-//Our clients - Swiper
-var swiper = new Swiper(".client-swiper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-});
+//Portfolio - Swiper
+// var swiper = new Swiper(".portfolio-container", {
+//     slidesPerView: 1,
+//     spaceBetween: 30,
+//     loop: true,
+//     pagination: {
+//         el: ".swiper-pagination",
+//         clickable: true,
+//     },
+//     navigation: {
+//         nextEl: ".swiper-button-next",
+//         prevEl: ".swiper-button-prev",
+//     },
+// });
 
 //Website dark/light theme
 const themeBtn = document.querySelector(".theme-btn");
