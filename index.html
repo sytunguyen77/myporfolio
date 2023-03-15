@@ -1,1112 +1,943 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!--=============== FAVICON ===============-->
-        <link
-            rel="shortcut icon"
-            href="images/favicon.ico"
-            type="image/x-icon"
-        />
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 
-        <!--=============== FONT AWESOME 4.===============-->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-            integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
+      <!--=============== FONT AWESOME 4.===============-->
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+         integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      />
 
-        <!--=============== FONT AWESOME 6.0===============-->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-        />
+      <!--=============== FONT AWESOME 6.0===============-->
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      />
 
-        <!--==================== UNICONS ====================-->
-        <link
-            rel="stylesheet"
-            href="https://unicons.iconscout.com/release/v3.0.6/css/line.css"
-        />
+      <!--==================== UNICONS ====================-->
+      <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css" />
 
-        <!-- =====BOX ICONS===== -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
-            rel="stylesheet"
-        />
+      <!-- =====BOX ICONS===== -->
+      <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
 
-        <!-- =====JQUERY CDN===== -->
-        <script
-            src="https://code.jquery.com/jquery-3.6.1.min.js"
-            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
-            crossorigin="anonymous"
-        ></script>
+      <!-- =====JQUERY CDN===== -->
+      <script
+         src="https://code.jquery.com/jquery-3.6.1.min.js"
+         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+         crossorigin="anonymous"
+      ></script>
 
-        <!-- =====SCROLL REVEAL===== -->
-        <script src="https://unpkg.com/scrollreveal"></script>
+      <!-- =====SCROLL REVEAL===== -->
+      <script src="https://unpkg.com/scrollreveal"></script>
 
-        <!-- =====SMOOTH SCROLLING===== -->
-        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+      <!-- =====SMOOTH SCROLLING===== -->
+      <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 
-        <!-- ===== CSS ===== -->
-        <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/parallax.css" />
-        <link rel="stylesheet" href="css/preloader.css" />
+      <!-- ===== CSS ===== -->
+      <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="css/parallax.css" />
+      <link rel="stylesheet" href="css/preloader.css" />
 
-        <title>Sy Tu || Porfolio</title>
-    </head>
-    <body class="preload">
-        <!--===== LOADER =====-->
-        <div class="loader-wrapper">
-            <span class="loader"><span class="loader-inner"></span></span>
-        </div>
+      <title>Sy Tu || Porfolio</title>
+   </head>
+   <body class="preload">
+      <!--===== LOADER =====-->
+      <div class="loader-wrapper">
+         <span class="loader"><span class="loader-inner"></span></span>
+      </div>
 
-        <!--=======Scroll to top button=======-->
-        <div class="scrollToTop-btn flex-center">
-            <i class="fas fa-arrow-up"></i>
-        </div>
+      <!--=======Scroll to top button=======-->
+      <div class="scrollToTop-btn flex-center">
+         <i class="fas fa-arrow-up"></i>
+      </div>
 
-        <!--=======Light/Dark theme button=======-->
-        <div class="theme-btn flex-center">
-            <i class="fas fa-moon"></i>
-            <i class="fas fa-sun"></i>
-        </div>
+      <!--=======Light/Dark theme button=======-->
+      <div class="theme-btn flex-center">
+         <i class="fas fa-moon"></i>
+         <i class="fas fa-sun"></i>
+      </div>
 
-        <!--=======Header=======-->
-        <header>
-            <div class="nav-bar">
-                <a href="#" class="logo-img"
-                    ><img src="images/logo.png" class="logo" alt="logo"
-                /></a>
-                <div class="navigation">
-                    <div class="nav-items">
-                        <div class="nav-close-btn"></div>
-                        <a class="nav-link" href="#home">Home</a>
-                        <a href="#about" class="nav-link">About</a>
-                        <a href="#skills" class="nav-link">Skills</a>
-                        <a href="#services" class="nav-link">Services</a>
-                        <a href="#portfolio" class="nav-link">Portfolio</a>
-                        <a href="#contact" class="nav-link">Contact</a>
-                    </div>
-                </div>
-                <div class="nav-menu-btn"></div>
+      <!--=======Header=======-->
+      <header>
+         <div class="nav-bar">
+            <a href="#" class="logo-img"><img src="images/logo.png" class="logo" alt="logo" /></a>
+            <div class="navigation">
+               <div class="nav-items">
+                  <div class="nav-close-btn"></div>
+                  <a class="nav-link" href="#home">Home</a>
+                  <a href="#about" class="nav-link">About</a>
+                  <a href="#skills" class="nav-link">Skills</a>
+                  <a href="#services" class="nav-link">Services</a>
+                  <a href="#portfolio" class="nav-link">Portfolio</a>
+                  <a href="#contact" class="nav-link">Contact</a>
+               </div>
             </div>
-        </header>
+            <div class="nav-menu-btn"></div>
+         </div>
+      </header>
 
-        <!-- =======Home section======= -->
-        <section class="home__theme" id="home">
-            <div class="effect-stars">
-                <div id="stars"></div>
-                <div id="stars2"></div>
-                <div id="stars3"></div>
+      <!-- =======Home section======= -->
+      <section class="home__theme" id="home">
+         <div class="effect-stars">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+         </div>
+         <div class="home flex-center">
+            <div class="home-container">
+               <div class="media-icons">
+                  <a href="https://www.linkedin.com/in/sy-tu-nguyen-48831113b/" target="_blank"
+                     ><i class="fab fab fa-linkedin"></i
+                  ></a>
+                  <a href="https://github.com/sytunguyen77/" target="_blank"
+                     ><i class="fab fab fa-github"></i
+                  ></a>
+                  <a href="https://www.facebook.com/sytu.nguyen.98" target="_blank"
+                     ><i class="fab fa-facebook-messenger"></i
+                  ></a>
+               </div>
+               <div class="info">
+                  <h2 class="special">Hi, I am Sy Tu</h2>
+                  <div class="home__typing">
+                     <span class="typing">Web Developer</span>
+                  </div>
+                  <p>
+                     This is my official portfolio website to showcase my all works related to web development
+                     and UI design.
+                  </p>
+                  <a href="#contact" class="btn home__button"
+                     >Let's Talk <i class="fas fa-arrow-circle-right"></i
+                  ></a>
+               </div>
+               <div class="home-img">
+                  <div class="imgBx">
+                     <img src="images/main1.jpg" alt="" />
+                  </div>
+               </div>
             </div>
-            <div class="home flex-center">
-                <div class="home-container">
-                    <div class="media-icons">
-                        <a
-                            href="https://www.linkedin.com/in/sy-tu-nguyen-48831113b/"
-                            target="_blank"
-                            ><i class="fab fab fa-linkedin"></i
-                        ></a>
-                        <a
-                            href="https://github.com/sytunguyen77/"
-                            target="_blank"
-                            ><i class="fab fab fa-github"></i
-                        ></a>
-                        <a
-                            href="https://www.facebook.com/sytu.nguyen.98"
-                            target="_blank"
-                            ><i class="fab fa-facebook-messenger"></i
-                        ></a>
-                    </div>
-                    <div class="info">
-                        <h2 class="special">Hi, I am Sy Tu</h2>
-                        <div class="home__typing">
-                            <span class="typing">Web Developer</span>
-                        </div>
-                        <p>
-                            This is my official portfolio website to showcase my
-                            all works related to web development and UI design.
-                        </p>
-                        <a href="#contact" class="btn home__button"
-                            >Let's Talk <i class="fas fa-arrow-circle-right"></i
-                        ></a>
-                    </div>
-                    <div class="home-img">
-                        <div class="imgBx">
-                            <img src="images/main1.jpg" alt="" />
-                        </div>
-                    </div>
-                </div>
-                <a href="#about" class="scroll-down"
-                    >Scroll Down <i class="fas fa-arrow-down"></i
-                ></a>
+            <a href="#about" class="scroll-down">Scroll Down <i class="fas fa-arrow-down"></i></a>
+         </div>
+      </section>
+
+      <!--=======About section=======-->
+      <section class="about section" id="about">
+         <div class="container flex-center">
+            <h1 class="section-title-01">About Me</h1>
+            <h2 class="section-title-02">About Me</h2>
+            <div class="content flex-center">
+               <div class="about-img" data-tilt>
+                  <img src="images/main3.jpg" alt="" />
+               </div>
+               <div class="about-info">
+                  <div class="description">
+                     <h3>
+                        My name is Sy Tu Nguyen
+                        <span class="wave">👋</span>
+                     </h3>
+                     <h4>
+                        A <span>Front-End Developer</span> based in
+                        <span>Houston</span>
+                     </h4>
+                     <p>
+                        I am incredibly passionate about building modern and dynamic websites for customers.
+                        My enthusiasm and passion for web development are driven by the special blend of
+                        creativity, logic, technology, and never running out of new things to explore. My
+                        career goal is to design efficient and high quality websites that improve the lives of
+                        those around me. Please check out my Portfolio 😊
+                     </p>
+                  </div>
+                  <a href="#" class="btn about-button">Download CV <i class="fas fa-download"></i></a>
+               </div>
             </div>
-        </section>
+         </div>
+      </section>
 
-        <!--=======About section=======-->
-        <section class="about section" id="about">
-            <div class="container flex-center">
-                <h1 class="section-title-01">About Me</h1>
-                <h2 class="section-title-02">About Me</h2>
-                <div class="content flex-center">
-                    <div class="about-img" data-tilt>
-                        <img src="images/main3.jpg" alt="" />
-                    </div>
-                    <div class="about-info">
-                        <div class="description">
-                            <h3>
-                                My name is Sy Tu Nguyen
-                                <span class="wave">👋</span>
-                            </h3>
-                            <h4>
-                                A <span>Front-End Developer</span> based in
-                                <span>Houston</span>
-                            </h4>
-                            <p>
-                                I am incredibly passionate about building modern
-                                and dynamic websites for customers. My
-                                enthusiasm and passion for web development are
-                                driven by the special blend of creativity,
-                                logic, technology, and never running out of new
-                                things to explore. My career goal is to design
-                                efficient and high quality websites that improve
-                                the lives of those around me. Please check out
-                                my Portfolio 😊
-                            </p>
+      <!--=======Skills section=======-->
+      <section class="skills section" id="skills">
+         <div class="container flex-center">
+            <h1 class="section-title-01">Skills</h1>
+            <h2 class="section-title-02">Skills</h2>
+            <div class="content">
+               <div class="skills-description">
+                  <h3>This is my <span>technology stack</span></h3>
+                  <p>
+                     With those technologies, I develop simple, intuitive and responsive user interfaces that
+                     save users time and effort.
+                  </p>
+               </div>
+
+               <div class="skills-toggle" data-toggle-box>
+                  <button class="toggle-btn active" data-toggle-btn>Skills</button>
+
+                  <button class="toggle-btn" data-toggle-btn>Tools</button>
+               </div>
+
+               <div class="skills-box" data-skills-box>
+                  <ul class="skills-list">
+                     <li>
+                        <div class="skill-card">
+                           <div class="tooltip">HTML5</div>
+
+                           <div class="card-icon">
+                              <img src="./icons/html5.png" alt="HTML5 logo" />
+                           </div>
                         </div>
-                        <a href="#" class="btn about-button"
-                            >Download CV <i class="fas fa-download"></i
-                        ></a>
-                    </div>
-                </div>
+                     </li>
+
+                     <li>
+                        <div class="skill-card">
+                           <div class="tooltip">CSS3</div>
+
+                           <div class="card-icon">
+                              <img src="./icons/css3.png" alt="CSS3 logo" />
+                           </div>
+                        </div>
+                     </li>
+
+                     <li>
+                        <div class="skill-card">
+                           <div class="tooltip">JavaScript</div>
+
+                           <div class="card-icon">
+                              <img src="./icons/javascript.gif" alt="JavaScript logo" />
+                           </div>
+                        </div>
+                     </li>
+
+                     <li>
+                        <div class="skill-card">
+                           <div class="tooltip">TypeScript</div>
+
+                           <div class="card-icon">
+                              <img src="./icons/typescript.png" alt="TypeScript logo" />
+                           </div>
+                        </div>
+                     </li>
+
+                     <li>
+                        <div class="skill-card">
+                           <div class="tooltip">jQuery</div>
+
+                           <div class="card-icon">
+                              <img src="./icons/jquery.png" alt="jQuery logo" />
+                           </div>
+                        </div>
+                     </li>
+
+                     <li>
+                        <div class="skill-card">
+                           <div class="tooltip">Bootstrap</div>
+
+                           <div class="card-icon">
+                              <img src="./icons/bootstrap.png" alt="Bootstrap logo" />
+                           </div>
+                        </div>
+                     </li>
+
+                     <li>
+                        <div class="skill-card">
+                           <div class="tooltip">PHP</div>
+
+                           <div class="card-icon">
+                              <img src="./icons/php.png" alt="PHP logo" />
+                           </div>
+                        </div>
+                     </li>
+
+                     <li>
+                        <div class="skill-card">
+                           <div class="tooltip">React</div>
+
+                           <div class="card-icon">
+                              <img src="./icons/react.gif" alt="React logo" />
+                           </div>
+                        </div>
+                     </li>
+
+                     <li>
+                        <div class="skill-card">
+                           <div class="tooltip">Wordpress</div>
+
+                           <div class="card-icon">
+                              <img src="./icons/wordpress.png" alt="Wordpress logo" />
+                           </div>
+                        </div>
+                     </li>
+
+                     <li>
+                        <div class="skill-card">
+                           <div class="tooltip">Lareval</div>
+
+                           <div class="card-icon">
+                              <img src="./icons/laravel.png" alt="Lareval logo" />
+                           </div>
+                        </div>
+                     </li>
+
+                     <li>
+                        <div class="skill-card">
+                           <div class="tooltip">NodeJS</div>
+
+                           <div class="card-icon">
+                              <img src="./icons/node-js.png" alt="NodeJS logo" />
+                           </div>
+                        </div>
+                     </li>
+
+                     <li>
+                        <div class="skill-card">
+                           <div class="tooltip">SASS</div>
+
+                           <div class="card-icon">
+                              <img src="./icons/sass.png" alt="SASS logo" />
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+
+                  <ul class="tools-list">
+                     <li>
+                        <div class="skill-card">
+                           <div class="tooltip">Ajax</div>
+
+                           <div class="card-icon">
+                              <img src="./icons/ajax.png" alt="Ajax logo" />
+                           </div>
+                        </div>
+                     </li>
+
+                     <li>
+                        <div class="skill-card">
+                           <div class="tooltip">Netlify</div>
+
+                           <div class="card-icon">
+                              <img src="./icons/netlify.png" alt="Netlify logo" />
+                           </div>
+                        </div>
+                     </li>
+
+                     <li>
+                        <div class="skill-card">
+                           <div class="tooltip">Webpack</div>
+
+                           <div class="card-icon">
+                              <img src="./icons/webpack.png" alt="Webpack logo" />
+                           </div>
+                        </div>
+                     </li>
+
+                     <li>
+                        <div class="skill-card">
+                           <div class="tooltip">Git</div>
+
+                           <div class="card-icon">
+                              <img src="./icons//git.png" alt="Git logo" />
+                           </div>
+                        </div>
+                     </li>
+
+                     <li>
+                        <div class="skill-card">
+                           <div class="tooltip">Npm</div>
+
+                           <div class="card-icon">
+                              <img src="./icons/npm.png" alt="Npm logo" />
+                           </div>
+                        </div>
+                     </li>
+
+                     <li>
+                        <div class="skill-card">
+                           <div class="tooltip">Command Line</div>
+
+                           <div class="card-icon">
+                              <img src="./icons/command.png" alt="Command Line logo" />
+                           </div>
+                        </div>
+                     </li>
+
+                     <li>
+                        <div class="skill-card">
+                           <div class="tooltip">VS Code</div>
+
+                           <div class="card-icon">
+                              <img src="./icons/vs-code.png" alt="VS Code logo" />
+                           </div>
+                        </div>
+                     </li>
+
+                     <li>
+                        <div class="skill-card">
+                           <div class="tooltip">Github</div>
+
+                           <div class="card-icon">
+                              <img src="./icons/github.png" alt="Github logo" />
+                           </div>
+                        </div>
+                     </li>
+
+                     <li>
+                        <div class="skill-card">
+                           <div class="tooltip">DevTools</div>
+
+                           <div class="card-icon">
+                              <img src="./icons/devtools.png" alt="Devtools logo" />
+                           </div>
+                        </div>
+                     </li>
+
+                     <li>
+                        <div class="skill-card">
+                           <div class="tooltip">Slack</div>
+
+                           <div class="card-icon">
+                              <img src="./icons/slack.png" alt="Slack logo" />
+                           </div>
+                        </div>
+                     </li>
+
+                     <li>
+                        <div class="skill-card">
+                           <div class="tooltip">Photoshop</div>
+
+                           <div class="card-icon">
+                              <img src="./icons/photoshop.png" alt="Photoshop logo" />
+                           </div>
+                        </div>
+                     </li>
+
+                     <li>
+                        <div class="skill-card">
+                           <div class="tooltip">Adobe XD</div>
+
+                           <div class="card-icon">
+                              <img src="./icons/adobe-xd.png" alt="Adobe XD logo" />
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
             </div>
-        </section>
+         </div>
+      </section>
 
-        <!--=======Skills section=======-->
-        <section class="skills section" id="skills">
-            <div class="container flex-center">
-                <h1 class="section-title-01">Skills</h1>
-                <h2 class="section-title-02">Skills</h2>
-                <div class="content">
-                    <div class="skills-description">
-                        <h3>This is my <span>technology stack</span></h3>
-                        <p>
-                            With those technologies, I develop simple, intuitive
-                            and responsive user interfaces that save users time
-                            and effort.
-                        </p>
-                    </div>
-
-                    <div class="skills-toggle" data-toggle-box>
-                        <button class="toggle-btn active" data-toggle-btn>
-                            Skills
-                        </button>
-
-                        <button class="toggle-btn" data-toggle-btn>
-                            Tools
-                        </button>
-                    </div>
-
-                    <div class="skills-box" data-skills-box>
-                        <ul class="skills-list">
-                            <li>
-                                <div class="skill-card">
-                                    <div class="tooltip">HTML5</div>
-
-                                    <div class="card-icon">
-                                        <img
-                                            src="./icons/html5.png"
-                                            alt="HTML5 logo"
-                                        />
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="skill-card">
-                                    <div class="tooltip">CSS3</div>
-
-                                    <div class="card-icon">
-                                        <img
-                                            src="./icons/css3.png"
-                                            alt="CSS3 logo"
-                                        />
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="skill-card">
-                                    <div class="tooltip">JavaScript</div>
-
-                                    <div class="card-icon">
-                                        <img
-                                            src="./icons/javascript.gif"
-                                            alt="JavaScript logo"
-                                        />
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="skill-card">
-                                    <div class="tooltip">TypeScript</div>
-
-                                    <div class="card-icon">
-                                        <img
-                                            src="./icons/typescript.png"
-                                            alt="TypeScript logo"
-                                        />
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="skill-card">
-                                    <div class="tooltip">jQuery</div>
-
-                                    <div class="card-icon">
-                                        <img
-                                            src="./icons/jquery.png"
-                                            alt="jQuery logo"
-                                        />
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="skill-card">
-                                    <div class="tooltip">Bootstrap</div>
-
-                                    <div class="card-icon">
-                                        <img
-                                            src="./icons/bootstrap.png"
-                                            alt="Bootstrap logo"
-                                        />
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="skill-card">
-                                    <div class="tooltip">PHP</div>
-
-                                    <div class="card-icon">
-                                        <img
-                                            src="./icons/php.png"
-                                            alt="PHP logo"
-                                        />
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="skill-card">
-                                    <div class="tooltip">React</div>
-
-                                    <div class="card-icon">
-                                        <img
-                                            src="./icons/react.gif"
-                                            alt="React logo"
-                                        />
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="skill-card">
-                                    <div class="tooltip">Wordpress</div>
-
-                                    <div class="card-icon">
-                                        <img
-                                            src="./icons/wordpress.png"
-                                            alt="Wordpress logo"
-                                        />
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="skill-card">
-                                    <div class="tooltip">Lareval</div>
-
-                                    <div class="card-icon">
-                                        <img
-                                            src="./icons/laravel.png"
-                                            alt="Lareval logo"
-                                        />
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="skill-card">
-                                    <div class="tooltip">NodeJS</div>
-
-                                    <div class="card-icon">
-                                        <img
-                                            src="./icons/node-js.png"
-                                            alt="NodeJS logo"
-                                        />
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="skill-card">
-                                    <div class="tooltip">SASS</div>
-
-                                    <div class="card-icon">
-                                        <img
-                                            src="./icons/sass.png"
-                                            alt="SASS logo"
-                                        />
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-
-                        <ul class="tools-list">
-                            <li>
-                                <div class="skill-card">
-                                    <div class="tooltip">Ajax</div>
-
-                                    <div class="card-icon">
-                                        <img
-                                            src="./icons/ajax.png"
-                                            alt="Ajax logo"
-                                        />
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="skill-card">
-                                    <div class="tooltip">Netlify</div>
-
-                                    <div class="card-icon">
-                                        <img
-                                            src="./icons/netlify.png"
-                                            alt="Netlify logo"
-                                        />
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="skill-card">
-                                    <div class="tooltip">Webpack</div>
-
-                                    <div class="card-icon">
-                                        <img
-                                            src="./icons/webpack.png"
-                                            alt="Webpack logo"
-                                        />
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="skill-card">
-                                    <div class="tooltip">Git</div>
-
-                                    <div class="card-icon">
-                                        <img
-                                            src="./icons//git.png"
-                                            alt="Git logo"
-                                        />
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="skill-card">
-                                    <div class="tooltip">Npm</div>
-
-                                    <div class="card-icon">
-                                        <img
-                                            src="./icons/npm.png"
-                                            alt="Npm logo"
-                                        />
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="skill-card">
-                                    <div class="tooltip">Command Line</div>
-
-                                    <div class="card-icon">
-                                        <img
-                                            src="./icons/command.png"
-                                            alt="Command Line logo"
-                                        />
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="skill-card">
-                                    <div class="tooltip">VS Code</div>
-
-                                    <div class="card-icon">
-                                        <img
-                                            src="./icons/vs-code.png"
-                                            alt="VS Code logo"
-                                        />
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="skill-card">
-                                    <div class="tooltip">Github</div>
-
-                                    <div class="card-icon">
-                                        <img
-                                            src="./icons/github.png"
-                                            alt="Github logo"
-                                        />
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="skill-card">
-                                    <div class="tooltip">DevTools</div>
-
-                                    <div class="card-icon">
-                                        <img
-                                            src="./icons/devtools.png"
-                                            alt="Devtools logo"
-                                        />
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="skill-card">
-                                    <div class="tooltip">Slack</div>
-
-                                    <div class="card-icon">
-                                        <img
-                                            src="./icons/slack.png"
-                                            alt="Slack logo"
-                                        />
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="skill-card">
-                                    <div class="tooltip">Photoshop</div>
-
-                                    <div class="card-icon">
-                                        <img
-                                            src="./icons/photoshop.png"
-                                            alt="Photoshop logo"
-                                        />
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="skill-card">
-                                    <div class="tooltip">Adobe XD</div>
-
-                                    <div class="card-icon">
-                                        <img
-                                            src="./icons/adobe-xd.png"
-                                            alt="Adobe XD logo"
-                                        />
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--=======Services section=======-->
-        <section class="services section" id="services">
-            <div class="container flex-center">
-                <h1 class="section-title-01">Services</h1>
-                <h2 class="section-title-02">Services</h2>
-                <div class="content">
-                    <div class="services-description">
-                        <h3>What I provide</h3>
-                    </div>
-                    <ul class="service-list">
-                        <li class="service-container">
-                            <div class="service-card">
-                                <i class="fas fa-pencil-ruler"></i>
-                                <h3>UI/UX Consultancy</h3>
-                                <div class="learn-more-btn">
-                                    Learn More
-                                    <i class="fas fa-long-arrow-alt-right"></i>
-                                </div>
-                            </div>
-                            <div class="service-modal flex-center">
-                                <div class="service-modal-body">
-                                    <i class="fas fa-times modal-close-btn"></i>
-                                    <h3>Ui/UX Consultancy</h3>
-                                    <h4>What is UX consulting?</h4>
-                                    <p>
-                                        UX consulting helps companies improve
-                                        their product’s overall usability and
-                                        optimize expenses by implementing the
-                                        right UX processes, methods, and tools.
-                                    </p>
-                                    <h4>What I provide</h4>
-                                    <ul>
-                                        <li>
-                                            <i class="fas fa-check-circle"></i>
-                                            Establish the right UX processes
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-check-circle"></i>
-                                            Create exceptional user experiences
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-check-circle"></i>
-                                            Creative direction
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-check-circle"></i>
-                                            Save resources
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="service-container">
-                            <div class="service-card">
-                                <i class="fas fa-photo-video"></i>
-                                <h3>Branding & Design</h3>
-                                <div class="learn-more-btn">
-                                    Learn More
-                                    <i class="fas fa-long-arrow-alt-right"></i>
-                                </div>
-                            </div>
-                            <div class="service-modal flex-center">
-                                <div class="service-modal-body">
-                                    <i class="fas fa-times modal-close-btn"></i>
-                                    <h3>Branding & Design</h3>
-                                    <h4>What is Brand & Design?</h4>
-                                    <p>
-                                        Brand Design can be defined as one of
-                                        the crucial marketing practices of
-                                        creating the name, logo, design, and the
-                                        symbolic elements related to the brand
-                                        to create a distinctive identity in
-                                        comparison to the other brands in the
-                                        market and also providing impetus to the
-                                        product differentiation.
-                                    </p>
-                                    <h4>What I provide</h4>
-                                    <ul>
-                                        <li>
-                                            <i class="fas fa-check-circle"></i>
-                                            Logo Design
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-check-circle"></i>
-                                            Banner Design
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-check-circle"></i>
-                                            Photography
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="service-container">
-                            <div class="service-card">
-                                <i class="fas fa-file-code"></i>
-                                <h3>Web Development</h3>
-                                <div class="learn-more-btn">
-                                    Learn More
-                                    <i class="fas fa-long-arrow-alt-right"></i>
-                                </div>
-                            </div>
-                            <div class="service-modal flex-center">
-                                <div class="service-modal-body">
-                                    <i class="fas fa-times modal-close-btn"></i>
-                                    <h3>Web Development</h3>
-                                    <h4>What is Web Development?</h4>
-                                    <p>
-                                        Web development services are used to
-                                        design, build, support, and evolve all
-                                        types of web-based software.
-                                    </p>
-                                    <h4>What I provide</h4>
-                                    <ul>
-                                        <li>
-                                            <i class="fas fa-check-circle"></i>
-                                            Web application development
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-check-circle"></i>
-                                            Search Engine Optimization services
-                                            (SEO)
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-check-circle"></i>
-                                            Get your site ranked highly on
-                                            Google
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-check-circle"></i>
-                                            Maintenance
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-check-circle"></i>
-                                            Testing
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="service-container">
-                            <div class="service-card">
-                                <i class="fas fa-align-left"></i>
-                                <h3>Web & Ad Design</h3>
-                                <div class="learn-more-btn">
-                                    Learn More
-                                    <i class="fas fa-long-arrow-alt-right"></i>
-                                </div>
-                            </div>
-                            <div class="service-modal flex-center">
-                                <div class="service-modal-body">
-                                    <i class="fas fa-times modal-close-btn"></i>
-                                    <h3>Web Design</h3>
-                                    <h4>What is Web Design?</h4>
-                                    <p>
-                                        Web design refers to the design of
-                                        websites that are displayed on the
-                                        internet. It usually refers to the user
-                                        experience aspects of website
-                                        development rather than software
-                                        development.
-                                    </p>
-                                    <h4>What I provide</h4>
-                                    <ul>
-                                        <li>
-                                            <i class="fas fa-check-circle"></i>
-                                            Design responsive and adaptive
-                                            websites
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-check-circle"></i>
-                                            Focus on simplicty and functionality
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-check-circle"></i>
-                                            Structuring and categorizing content
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!--=======Portfolio section=======-->
-        <section class="portfolio section" id="portfolio">
-            <div class="container flex-center">
-                <h1 class="section-title-01">Portfolio</h1>
-                <h2 class="section-title-02">Portfolio</h2>
-                <div class="content">
-                    <div class="portfolio-list">
-                        <!-- Project 1 -->
-                        <div class="portfolio-item swiper-slide">
-                            <div class="portfolio-image">
-                                <img
-                                    src="images/project-1.jpg"
-                                    alt="project image"
-                                />
-                            </div>
-                            <div class="portfolio-content">
-                                <h3>MP3 Player</h3>
-                                <div class="portfolio-view d-flex">
-                                    <span>Web App Design</span>
-                                    <a
-                                        href="javascript:void(0)"
-                                        class="btn-view"
-                                    >
-                                        View Project
-                                    </a>
-                                </div>
-                            </div>
+      <!--=======Services section=======-->
+      <section class="services section" id="services">
+         <div class="container flex-center">
+            <h1 class="section-title-01">Services</h1>
+            <h2 class="section-title-02">Services</h2>
+            <div class="content">
+               <div class="services-description">
+                  <h3>What I provide</h3>
+               </div>
+               <ul class="service-list">
+                  <li class="service-container">
+                     <div class="service-card">
+                        <i class="fas fa-pencil-ruler"></i>
+                        <h3>UI/UX Consultancy</h3>
+                        <div class="learn-more-btn">
+                           Learn More
+                           <i class="fas fa-long-arrow-alt-right"></i>
                         </div>
-                        <!-- Project 2 -->
-                        <div class="portfolio-item swiper-slide">
-                            <div class="portfolio-image">
-                                <img
-                                    src="images/project-2.jpg"
-                                    alt="project image"
-                                />
-                            </div>
-                            <div class="portfolio-content">
-                                <h3>Weather App</h3>
-                                <div class="portfolio-view d-flex">
-                                    <span>Web App Design</span>
-                                    <a
-                                        href="javascript:void(0)"
-                                        class="btn-view"
-                                        >View Project
-                                    </a>
-                                </div>
-                            </div>
+                     </div>
+                     <div class="service-modal flex-center">
+                        <div class="service-modal-body">
+                           <i class="fas fa-times modal-close-btn"></i>
+                           <h3>Ui/UX Consultancy</h3>
+                           <h4>What is UX consulting?</h4>
+                           <p>
+                              UX consulting helps companies improve their product’s overall usability and
+                              optimize expenses by implementing the right UX processes, methods, and tools.
+                           </p>
+                           <h4>What I provide</h4>
+                           <ul>
+                              <li>
+                                 <i class="fas fa-check-circle"></i>
+                                 Establish the right UX processes
+                              </li>
+                              <li>
+                                 <i class="fas fa-check-circle"></i>
+                                 Create exceptional user experiences
+                              </li>
+                              <li>
+                                 <i class="fas fa-check-circle"></i>
+                                 Creative direction
+                              </li>
+                              <li>
+                                 <i class="fas fa-check-circle"></i>
+                                 Save resources
+                              </li>
+                           </ul>
                         </div>
-                        <!-- Project 3 -->
-                        <div class="portfolio-item swiper-slide">
-                            <div class="portfolio-image">
-                                <img
-                                    src="images/project-3.jpg"
-                                    alt="project image"
-                                />
-                            </div>
-                            <div class="portfolio-content">
-                                <h3>In Progress</h3>
-                                <div class="portfolio-view d-flex">
-                                    <span>UI Design</span>
-                                    <a
-                                        href="javascript:void(0)"
-                                        class="btn-view"
-                                    >
-                                        View Project
-                                    </a>
-                                </div>
-                            </div>
+                     </div>
+                  </li>
+
+                  <li class="service-container">
+                     <div class="service-card">
+                        <i class="fas fa-photo-video"></i>
+                        <h3>Branding & Design</h3>
+                        <div class="learn-more-btn">
+                           Learn More
+                           <i class="fas fa-long-arrow-alt-right"></i>
                         </div>
-                        <!-- Project 4 -->
-                        <div class="portfolio-item swiper-slide">
-                            <div class="portfolio-image">
-                                <img
-                                    src="images/project-4.jpg"
-                                    alt="project image"
-                                />
-                            </div>
-                            <div class="portfolio-content">
-                                <h3>In Progress</h3>
-                                <div class="portfolio-view d-flex">
-                                    <span>UI Design</span>
-                                    <a
-                                        href="javascript:void(0)"
-                                        class="btn-view"
-                                    >
-                                        View Project
-                                    </a>
-                                </div>
-                            </div>
+                     </div>
+                     <div class="service-modal flex-center">
+                        <div class="service-modal-body">
+                           <i class="fas fa-times modal-close-btn"></i>
+                           <h3>Branding & Design</h3>
+                           <h4>What is Brand & Design?</h4>
+                           <p>
+                              Brand Design can be defined as one of the crucial marketing practices of
+                              creating the name, logo, design, and the symbolic elements related to the brand
+                              to create a distinctive identity in comparison to the other brands in the market
+                              and also providing impetus to the product differentiation.
+                           </p>
+                           <h4>What I provide</h4>
+                           <ul>
+                              <li>
+                                 <i class="fas fa-check-circle"></i>
+                                 Logo Design
+                              </li>
+                              <li>
+                                 <i class="fas fa-check-circle"></i>
+                                 Banner Design
+                              </li>
+                              <li>
+                                 <i class="fas fa-check-circle"></i>
+                                 Photography
+                              </li>
+                           </ul>
                         </div>
-                        <!-- Project 5 -->
-                        <div class="portfolio-item swiper-slide">
-                            <div class="portfolio-image">
-                                <img
-                                    src="images/project-5.jpg"
-                                    alt="project image"
-                                />
-                            </div>
-                            <div class="portfolio-content">
-                                <h3>In Progress</h3>
-                                <div class="portfolio-view d-flex">
-                                    <span>UI Design</span>
-                                    <a
-                                        href="javascript:void(0)"
-                                        class="btn-view"
-                                    >
-                                        View Project
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Project 6 -->
-                        <div class="portfolio-item swiper-slide">
-                            <div class="portfolio-image">
-                                <img
-                                    src="images/project-6.jpg"
-                                    alt="project image"
-                                />
-                            </div>
-                            <div class="portfolio-content">
-                                <h3>In Progress</h3>
-                                <div class="portfolio-view d-flex">
-                                    <span>UI Design</span>
-                                    <a
-                                        href="javascript:void(0)"
-                                        class="btn-view"
-                                    >
-                                        View Project
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                     </div>
+                  </li>
 
-            <!-- ======== Project View Modal  ========= -->
-            <div class="modal-container">
-                <!-- Modal View 1 -->
-                <div class="porfolio-model flex-center">
-                    <div class="portfolio-model-body">
-                        <i class="fas fa-times portfolio-close-btn"></i>
-                        <img src="images/project-1.jpg" alt="mp3-player" />
-                        <div class="portfolio-model-content">
-                            <h3>Create a simple MP3 Player App</h3>
-                            <p class="requirements">
-                                This is just a fun personal JavaScript project
-                                to hone my UI design and Javascript skills.
-                            </p>
-
-                            <ul>
-                                <li>
-                                    <span>Tech Stack:-</span>
-                                    HTML, CSS, and JAVASCRIPT
-                                </li>
-                                <li>
-                                    <span>Github link:-</span>
-                                    <a
-                                        href="https://github.com/sytunguyen77/My-Music-Player"
-                                        target="_blank"
-                                        >https://github.com/sytunguyen77/My-Music-Player</a
-                                    >
-                                </li>
-                                <li>
-                                    <span>Project link:-</span>
-                                    <a
-                                        href="https://mp3-sytu.netlify.app/"
-                                        target="_blank"
-                                        >https://mp3-sytu.netlify.app/</a
-                                    >
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Modal View 2 -->
-                <div class="porfolio-model flex-center">
-                    <div class="portfolio-model-body">
-                        <i class="fas fa-times portfolio-close-btn"></i>
-
-                        <img src="images/project-2.jpg" alt="" />
-                        <div class="portfolio-model-content">
-                            <h3>Create a simple Weather App</h3>
-                            <p class="requirements">
-                                This is just a fun personal JavaScript project
-                                to hone my UI design and Javascript skills.
-                            </p>
-
-                            <ul>
-                                <li>
-                                    <span>Tech Stack:-</span>
-                                    HTML, CSS, and JAVASCRIPT
-                                </li>
-                                <li>
-                                    <span>Github link:-</span>
-                                    <a
-                                        href="https://github.com/sytunguyen77/thoitiet"
-                                        target="_blank"
-                                        >https://github.com/sytunguyen77/thoitiet</a
-                                    >
-                                </li>
-                                <li>
-                                    <span>Project link:-</span>
-                                    <a
-                                        href="https://weatherapp-sytunguyen.netlify.app/"
-                                        target="_blank"
-                                        >https://weatherapp-sytunguyen.netlify.app/</a
-                                    >
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Modal View 3 -->
-                <div class="porfolio-model flex-center">
-                    <div class="portfolio-model-body">
-                        <i class="fas fa-times portfolio-close-btn"></i>
-                        <h3>Gaming Website</h3>
-                        <img src="images/project-3.jpg" alt="" />
-                    </div>
-                </div>
-
-                <!-- Modal View 4 -->
-                <div class="porfolio-model flex-center">
-                    <div class="portfolio-model-body">
-                        <i class="fas fa-times portfolio-close-btn"></i>
+                  <li class="service-container">
+                     <div class="service-card">
+                        <i class="fas fa-file-code"></i>
                         <h3>Web Development</h3>
-                        <img src="images/project-4.jpg" alt="" />
-                    </div>
-                </div>
-
-                <!-- Modal View 5 -->
-                <div class="porfolio-model flex-center">
-                    <div class="portfolio-model-body">
-                        <i class="fas fa-times portfolio-close-btn"></i>
-                        <h3>Shopping Website</h3>
-                        <img src="images/project-5.jpg" alt="" />
-                    </div>
-                </div>
-
-                <!-- Modal View 6 -->
-                <div class="porfolio-model flex-center">
-                    <div class="portfolio-model-body">
-                        <i class="fas fa-times portfolio-close-btn"></i>
-                        <h3>Interface Design</h3>
-                        <img src="images/project-6.jpg" alt="" />
-                    </div>
-                </div>
-            </div>
-
-            <!--=======Get-in-touch=======-->
-            <div class="get-in-touch sub-section">
-                <div class="container">
-                    <div class="content flex-center">
-                        <div class="contact-card flex-center">
-                            <div class="title">
-                                <h4>Let's Talk</h4>
-                                <h3>About Your</h3>
-                                <h2>Next Project</h2>
-                            </div>
-                            <div class="contact-btn">
-                                <a href="" class="btn"
-                                    >Get In Touch
-                                    <i class="fas fa-paper-plane"></i
-                                ></a>
-                            </div>
+                        <div class="learn-more-btn">
+                           Learn More
+                           <i class="fas fa-long-arrow-alt-right"></i>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                     </div>
+                     <div class="service-modal flex-center">
+                        <div class="service-modal-body">
+                           <i class="fas fa-times modal-close-btn"></i>
+                           <h3>Web Development</h3>
+                           <h4>What is Web Development?</h4>
+                           <p>
+                              Web development services are used to design, build, support, and evolve all
+                              types of web-based software.
+                           </p>
+                           <h4>What I provide</h4>
+                           <ul>
+                              <li>
+                                 <i class="fas fa-check-circle"></i>
+                                 Web application development
+                              </li>
+                              <li>
+                                 <i class="fas fa-check-circle"></i>
+                                 Search Engine Optimization services (SEO)
+                              </li>
+                              <li>
+                                 <i class="fas fa-check-circle"></i>
+                                 Get your site ranked highly on Google
+                              </li>
+                              <li>
+                                 <i class="fas fa-check-circle"></i>
+                                 Maintenance
+                              </li>
+                              <li>
+                                 <i class="fas fa-check-circle"></i>
+                                 Testing
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </li>
 
-        <!--=======Contact section=======-->
-        <section class="contact section" id="contact">
-            <div class="container flex-center">
-                <h1 class="section-title-01">Contact Me</h1>
-                <h2 class="section-title-02">Contact Me</h2>
-                <div class="content">
-                    <div class="contact-left">
-                        <h2>Reach out to me</h2>
-                        <ul class="contact-list">
-                            <li>
-                                <h3 class="item-title">
-                                    <i class="fas fa-phone"></i> Phone
-                                </h3>
-                                <span>253-285-2840</span>
-                            </li>
-                            <li>
-                                <h3 class="item-title">
-                                    <i class="fas fa-envelope"></i> Email
-                                    Address
-                                </h3>
-                                <span
-                                    ><a href="mailto:martian@email.com"
-                                        >sytunguyen77@gmail.com</a
-                                    ></span
-                                >
-                            </li>
-                            <li>
-                                <h3 class="item-title">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    Official Address
-                                </h3>
-                                <span>Houston, Texas</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="contact-right">
-                        <p>
-                            Have A Project In Mind?<br /><span
-                                >Please Drop a Message</span
-                            >
-                        </p>
-                        <form action="" class="contact-form">
-                            <div class="first-row">
-                                <input type="text" placeholder="Name" />
-                            </div>
-                            <div class="second-row">
-                                <input type="email" placeholder="Email" />
-                                <input type="text" placeholder="Subject" />
-                            </div>
-                            <div class="third-row">
-                                <textarea
-                                    name="message"
-                                    id=""
-                                    rows="7"
-                                    placeholder="Message"
-                                ></textarea>
-                            </div>
-                            <button class="btn" type="submit">
-                                Send Message
-                                <i class="fas fa-paper-plane"></i>
-                            </button>
-                        </form>
-                    </div>
-                </div>
+                  <li class="service-container">
+                     <div class="service-card">
+                        <i class="fas fa-align-left"></i>
+                        <h3>Web & Ad Design</h3>
+                        <div class="learn-more-btn">
+                           Learn More
+                           <i class="fas fa-long-arrow-alt-right"></i>
+                        </div>
+                     </div>
+                     <div class="service-modal flex-center">
+                        <div class="service-modal-body">
+                           <i class="fas fa-times modal-close-btn"></i>
+                           <h3>Web Design</h3>
+                           <h4>What is Web Design?</h4>
+                           <p>
+                              Web design refers to the design of websites that are displayed on the internet.
+                              It usually refers to the user experience aspects of website development rather
+                              than software development.
+                           </p>
+                           <h4>What I provide</h4>
+                           <ul>
+                              <li>
+                                 <i class="fas fa-check-circle"></i>
+                                 Design responsive and adaptive websites
+                              </li>
+                              <li>
+                                 <i class="fas fa-check-circle"></i>
+                                 Focus on simplicty and functionality
+                              </li>
+                              <li>
+                                 <i class="fas fa-check-circle"></i>
+                                 Structuring and categorizing content
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </li>
+               </ul>
             </div>
-        </section>
+         </div>
+      </section>
 
-        <!--=======Footer=======-->
-        <footer>
-            <div class="footer-container">
-                <div class="hr"></div>
-                <div class="hr"></div>
-                <div class="follow group">
-                    <h3>Sy Tu</h3>
-                    <ul>
+      <!--=======Portfolio section=======-->
+      <section class="portfolio section" id="portfolio">
+         <div class="container flex-center">
+            <h1 class="section-title-01">Portfolio</h1>
+            <h2 class="section-title-02">Portfolio</h2>
+            <div class="content">
+               <div class="portfolio-list">
+                  <!-- Project 1 -->
+                  <div class="portfolio-item swiper-slide">
+                     <div class="portfolio-image">
+                        <img src="images/project-1.jpg" alt="project image" />
+                     </div>
+                     <div class="portfolio-content">
+                        <h3>MP3 Player</h3>
+                        <div class="portfolio-view d-flex">
+                           <span>Web App Design</span>
+                           <a href="javascript:void(0)" class="btn-view"> View Project </a>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Project 2 -->
+                  <div class="portfolio-item swiper-slide">
+                     <div class="portfolio-image">
+                        <img src="images/project-2.jpg" alt="project image" />
+                     </div>
+                     <div class="portfolio-content">
+                        <h3>Weather App</h3>
+                        <div class="portfolio-view d-flex">
+                           <span>Web App Design</span>
+                           <a href="javascript:void(0)" class="btn-view">View Project </a>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Project 3 -->
+                  <div class="portfolio-item swiper-slide">
+                     <div class="portfolio-image">
+                        <img src="images/project-3.jpg" alt="project image" />
+                     </div>
+                     <div class="portfolio-content">
+                        <h3>Ecommerce App</h3>
+                        <div class="portfolio-view d-flex">
+                           <span>Functionality</span>
+                           <a href="javascript:void(0)" class="btn-view"> View Project </a>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Project 4 -->
+                  <div class="portfolio-item swiper-slide">
+                     <div class="portfolio-image">
+                        <img src="images/project-4.jpg" alt="project image" />
+                     </div>
+                     <div class="portfolio-content">
+                        <h3>In Progress</h3>
+                        <div class="portfolio-view d-flex">
+                           <span>UI Design</span>
+                           <a href="javascript:void(0)" class="btn-view"> View Project </a>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Project 5 -->
+                  <div class="portfolio-item swiper-slide">
+                     <div class="portfolio-image">
+                        <img src="images/project-5.jpg" alt="project image" />
+                     </div>
+                     <div class="portfolio-content">
+                        <h3>In Progress</h3>
+                        <div class="portfolio-view d-flex">
+                           <span>UI Design</span>
+                           <a href="javascript:void(0)" class="btn-view"> View Project </a>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Project 6 -->
+                  <div class="portfolio-item swiper-slide">
+                     <div class="portfolio-image">
+                        <img src="images/project-6.jpg" alt="project image" />
+                     </div>
+                     <div class="portfolio-content">
+                        <h3>In Progress</h3>
+                        <div class="portfolio-view d-flex">
+                           <span>UI Design</span>
+                           <a href="javascript:void(0)" class="btn-view"> View Project </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- ======== Project View Modal  ========= -->
+         <div class="modal-container">
+            <!-- Modal View 1 -->
+            <div class="porfolio-model flex-center">
+               <div class="portfolio-model-body">
+                  <i class="fas fa-times portfolio-close-btn"></i>
+                  <img src="images/project-1.jpg" alt="mp3-player" />
+                  <div class="portfolio-model-content">
+                     <h3>Create a simple MP3 Player App</h3>
+                     <p class="requirements">
+                        This is just a fun personal JavaScript project to hone my UI design and Javascript
+                        skills.
+                     </p>
+
+                     <ul>
                         <li>
-                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                           <span>Tech Stack:-</span>
+                           HTML, CSS, and JAVASCRIPT
                         </li>
                         <li>
-                            <a href=""><i class="fab fa-github-alt"></i></a>
+                           <span>Github link:-</span>
+                           <a href="https://github.com/sytunguyen77/My-Music-Player" target="_blank"
+                              >https://github.com/sytunguyen77/My-Music-Player</a
+                           >
                         </li>
                         <li>
-                            <a href=""
-                                ><i class="fab fa-facebook-messenger"></i
-                            ></a>
+                           <span>Project link:-</span>
+                           <a href="https://mp3-sytu.netlify.app/" target="_blank"
+                              >https://mp3-sytu.netlify.app/</a
+                           >
                         </li>
-                    </ul>
-                </div>
+                     </ul>
+                  </div>
+               </div>
             </div>
-            <div class="footer-copyright group">
-                <p>
-                    © <span id="date"></span> Developed and Designed by Sy Tu.
-                </p>
+
+            <!-- Modal View 2 -->
+            <div class="porfolio-model flex-center">
+               <div class="portfolio-model-body">
+                  <i class="fas fa-times portfolio-close-btn"></i>
+
+                  <img src="images/project-2.jpg" alt="" />
+                  <div class="portfolio-model-content">
+                     <h3>Create a simple Weather App</h3>
+                     <p class="requirements">
+                        This is just a fun personal JavaScript project to hone my UI design and Javascript
+                        skills.
+                     </p>
+
+                     <ul>
+                        <li>
+                           <span>Tech Stack:-</span>
+                           HTML, CSS, and JAVASCRIPT
+                        </li>
+                        <li>
+                           <span>Github link:-</span>
+                           <a href="https://github.com/sytunguyen77/thoitiet" target="_blank"
+                              >https://github.com/sytunguyen77/thoitiet</a
+                           >
+                        </li>
+                        <li>
+                           <span>Project link:-</span>
+                           <a href="https://weatherapp-sytunguyen.netlify.app/" target="_blank"
+                              >https://weatherapp-sytunguyen.netlify.app/</a
+                           >
+                        </li>
+                     </ul>
+                  </div>
+               </div>
             </div>
-        </footer>
 
-        <!--===== TYPING ANIMATION =====-->
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
-            referrerpolicy="no-referrer"
-        ></script>
+            <!-- Modal View 3 -->
+            <div class="porfolio-model flex-center">
+               <div class="portfolio-model-body">
+                  <i class="fas fa-times portfolio-close-btn"></i>
+                  <h3>Ecommerce Website</h3>
+                  <img src="images/project-3.jpg" alt="" />
+                  <div class="portfolio-model-content">
+                     <h3>Create a Watches Ecommerce Website</h3>
+                     <p class="requirements">
+                        This e-commerce website features an add-to-cart function, a wishlist option, a search
+                        tool, and a user login form for an enhanced shopping experience, and and seamless
+                        Stripe integration for a convenient and secure checkout experience.
+                     </p>
 
-        <!--===== SMOOTH SCROLL =====-->
-        <script>
-            var scroll = new SmoothScroll('a[href*="#"]', {});
-        </script>
+                     <ul>
+                        <li>
+                           <span>Tech Stack:-</span>
+                           HTML, CSS, and JAVASCRIPT
+                        </li>
+                        <li>
+                           <span>Github link:-</span>
+                           <a href="https://github.com/sytunguyen77/Ecommerce" target="_blank"
+                              >https://github.com/sytunguyen77/Ecommerce</a
+                           >
+                        </li>
+                        <li>
+                           <span>Project link:-</span>
+                           <a href="https://ecommerce-sytu.netlify.app/" target="_blank"
+                              >https://ecommerce-sytu.netlify.app/</a
+                           >
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
 
-        <!--=======External scripts=======-->
-        <script src="js/swiper-bundle.min.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/vanilla-tilt.js"></script>
-    </body>
+            <!-- Modal View 4 -->
+            <div class="porfolio-model flex-center">
+               <div class="portfolio-model-body">
+                  <i class="fas fa-times portfolio-close-btn"></i>
+                  <h3>Web Development</h3>
+                  <img src="images/project-4.jpg" alt="" />
+               </div>
+            </div>
+
+            <!-- Modal View 5 -->
+            <div class="porfolio-model flex-center">
+               <div class="portfolio-model-body">
+                  <i class="fas fa-times portfolio-close-btn"></i>
+                  <h3>Shopping Website</h3>
+                  <img src="images/project-5.jpg" alt="" />
+               </div>
+            </div>
+
+            <!-- Modal View 6 -->
+            <div class="porfolio-model flex-center">
+               <div class="portfolio-model-body">
+                  <i class="fas fa-times portfolio-close-btn"></i>
+                  <h3>Interface Design</h3>
+                  <img src="images/project-6.jpg" alt="" />
+               </div>
+            </div>
+         </div>
+
+         <!--=======Get-in-touch=======-->
+         <div class="get-in-touch sub-section">
+            <div class="container">
+               <div class="content flex-center">
+                  <div class="contact-card flex-center">
+                     <div class="title">
+                        <h4>Let's Talk</h4>
+                        <h3>About Your</h3>
+                        <h2>Next Project</h2>
+                     </div>
+                     <div class="contact-btn">
+                        <a href="" class="btn">Get In Touch <i class="fas fa-paper-plane"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!--=======Contact section=======-->
+      <section class="contact section" id="contact">
+         <div class="container flex-center">
+            <h1 class="section-title-01">Contact Me</h1>
+            <h2 class="section-title-02">Contact Me</h2>
+            <div class="content">
+               <div class="contact-left">
+                  <h2>Reach out to me</h2>
+                  <ul class="contact-list">
+                     <li>
+                        <h3 class="item-title"><i class="fas fa-phone"></i> Phone</h3>
+                        <span>253-285-2840</span>
+                     </li>
+                     <li>
+                        <h3 class="item-title"><i class="fas fa-envelope"></i> Email Address</h3>
+                        <span><a href="mailto:martian@email.com">sytunguyen77@gmail.com</a></span>
+                     </li>
+                     <li>
+                        <h3 class="item-title">
+                           <i class="fas fa-map-marker-alt"></i>
+                           Official Address
+                        </h3>
+                        <span>Houston, Texas</span>
+                     </li>
+                  </ul>
+               </div>
+               <div class="contact-right">
+                  <p>Have A Project In Mind?<br /><span>Please Drop a Message</span></p>
+                  <form action="" class="contact-form">
+                     <div class="first-row">
+                        <input type="text" placeholder="Name" />
+                     </div>
+                     <div class="second-row">
+                        <input type="email" placeholder="Email" />
+                        <input type="text" placeholder="Subject" />
+                     </div>
+                     <div class="third-row">
+                        <textarea name="message" id="" rows="7" placeholder="Message"></textarea>
+                     </div>
+                     <button class="btn" type="submit">
+                        Send Message
+                        <i class="fas fa-paper-plane"></i>
+                     </button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!--=======Footer=======-->
+      <footer>
+         <div class="footer-container">
+            <div class="hr"></div>
+            <div class="hr"></div>
+            <div class="follow group">
+               <h3>Sy Tu</h3>
+               <ul>
+                  <li>
+                     <a href=""><i class="fab fa-linkedin-in"></i></a>
+                  </li>
+                  <li>
+                     <a href=""><i class="fab fa-github-alt"></i></a>
+                  </li>
+                  <li>
+                     <a href=""><i class="fab fa-facebook-messenger"></i></a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="footer-copyright group">
+            <p>© <span id="date"></span> Developed and Designed by Sy Tu.</p>
+         </div>
+      </footer>
+
+      <!--===== TYPING ANIMATION =====-->
+      <script
+         src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+         referrerpolicy="no-referrer"
+      ></script>
+
+      <!--===== SMOOTH SCROLL =====-->
+      <script>
+         var scroll = new SmoothScroll('a[href*="#"]', {});
+      </script>
+
+      <!--=======External scripts=======-->
+      <script src="js/swiper-bundle.min.js"></script>
+      <script src="js/main.js"></script>
+      <script src="js/vanilla-tilt.js"></script>
+   </body>
 </html>
