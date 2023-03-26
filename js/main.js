@@ -68,7 +68,7 @@ portfolioCloseBtns.forEach((portfolioCloseBtn) => {
 //     },
 // });
 
-//Website dark/light theme
+/* ================================== LIGHT/DARK THEME ================================= */
 const themeBtn = document.querySelector(".theme-btn");
 
 themeBtn.addEventListener("click", () => {
@@ -91,7 +91,8 @@ if (savedTheme) {
 } else {
     // Set dark theme as main theme
     document.body.classList.add("dark-theme");
-    themeBtn.classList.remove("sun");
+    themeBtn.classList.remove("moon");
+    themeBtn.classList.add("sun");
 }
 
 //Scroll to top button
