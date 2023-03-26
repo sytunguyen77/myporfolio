@@ -23,13 +23,7 @@ modalCloseBtns.forEach((modalCloseBtn) => {
 
 /* ============================== TYPING ANIMATION ============================ */
 var typed = new Typed(".typing", {
-    strings: [
-        "",
-        "Web Designer",
-        "Web Developer",
-        "Front-End Developer",
-        "Freelancer",
-    ],
+    strings: ["", "Web Designer", "Web Developer", "Front-End Developer", "Freelancer"],
     typeSpeed: 100,
     BackSpeed: 60,
     loop: true,
@@ -85,19 +79,19 @@ themeBtn.addEventListener("click", () => {
     localStorage.setItem("saved-icon", getCurrentIcon());
 });
 
-const getCurrentTheme = () =>
-    document.body.classList.contains("dark-theme") ? "dark" : "light";
-const getCurrentIcon = () =>
-    themeBtn.classList.contains("sun") ? "sun" : "moon";
+const getCurrentTheme = () => (document.body.classList.contains("dark-theme") ? "dark" : "light");
+const getCurrentIcon = () => (themeBtn.classList.contains("sun") ? "sun" : "moon");
 
 const savedTheme = localStorage.getItem("saved-theme");
 const savedIcon = localStorage.getItem("saved-icon");
 
 if (savedTheme) {
-    document.body.classList[savedTheme === "dark" ? "add" : "remove"](
-        "dark-theme"
-    );
+    document.body.classList[savedTheme === "dark" ? "add" : "remove"]("dark-theme");
     themeBtn.classList[savedIcon === "sun" ? "add" : "remove"]("sun");
+} else {
+    // Set dark theme as main theme
+    document.body.classList.add("dark-theme");
+    themeBtn.classList.remove("sun");
 }
 
 //Scroll to top button
@@ -123,13 +117,9 @@ window.addEventListener("scroll", () => {
         let id = current.getAttribute("id");
 
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-            document
-                .querySelector(".nav-items a[href*=" + id + "]")
-                .classList.add("active");
+            document.querySelector(".nav-items a[href*=" + id + "]").classList.add("active");
         } else {
-            document
-                .querySelector(".nav-items a[href*=" + id + "]")
-                .classList.remove("active");
+            document.querySelector(".nav-items a[href*=" + id + "]").classList.remove("active");
         }
     });
 });
@@ -213,14 +203,11 @@ ScrollReveal().reveal(
     ".skills-description, .services-description, .contact-card, .client-swiper, .contact-left h2, .skills-box, .skills-toggle",
     { delay: 700, origin: "left" }
 );
-ScrollReveal().reveal(
-    ".experience-card, .service-card, .education, .portfolio .portfolio-item",
-    {
-        delay: 800,
-        origin: "bottom",
-        interval: 200,
-    }
-);
+ScrollReveal().reveal(".experience-card, .service-card, .education, .portfolio .portfolio-item", {
+    delay: 800,
+    origin: "bottom",
+    interval: 200,
+});
 ScrollReveal().reveal("footer .group", {
     delay: 500,
     origin: "top",
