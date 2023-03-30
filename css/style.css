@@ -615,8 +615,8 @@ header.sticky .nav-bar {
 } */
 
 .about-box {
-   width: 200px;
-   height: 200px;
+   width: 250px;
+   height: 250px;
    margin: auto;
    transform-style: preserve-3d;
 }
@@ -634,22 +634,22 @@ header.sticky .nav-bar {
 }
 
 .about-box img:nth-child(1) {
-   transform: rotateY(0deg) translateZ(100px);
+   transform: rotateY(0deg) translateZ(125px);
 }
 .about-box img:nth-child(2) {
-   transform: rotateY(90deg) translateZ(100px);
+   transform: rotateY(90deg) translateZ(125px);
 }
 .about-box img:nth-child(3) {
-   transform: rotateY(180deg) translateZ(100px);
+   transform: rotateY(180deg) translateZ(125px);
 }
 .about-box img:nth-child(4) {
-   transform: rotateY(-90deg) translateZ(100px);
+   transform: rotateY(-90deg) translateZ(125px);
 }
 .about-box img:nth-child(5) {
-   transform: rotateX(90deg) translateZ(100px);
+   transform: rotateX(90deg) translateZ(125px);
 }
 .about-box img:nth-child(6) {
-   transform: rotateX(-90deg) translateZ(100px);
+   transform: rotateX(-90deg) translateZ(125px);
 }
 
 .about-box {
@@ -1465,13 +1465,37 @@ footer a {
       row-gap: 40px;
    }
 
-   .about-img img {
+   /* .about-img img {
       min-width: 0;
       width: 400px;
       height: 400px;
       display: block;
       margin-left: auto;
       margin-right: auto;
+   } */
+
+   .about-box {
+      width: 200px;
+      height: 200px;
+   }
+
+   .about-box img:nth-child(1) {
+      transform: rotateY(0deg) translateZ(100px);
+   }
+   .about-box img:nth-child(2) {
+      transform: rotateY(90deg) translateZ(100px);
+   }
+   .about-box img:nth-child(3) {
+      transform: rotateY(180deg) translateZ(100px);
+   }
+   .about-box img:nth-child(4) {
+      transform: rotateY(-90deg) translateZ(100px);
+   }
+   .about-box img:nth-child(5) {
+      transform: rotateX(90deg) translateZ(100px);
+   }
+   .about-box img:nth-child(6) {
+      transform: rotateX(-90deg) translateZ(100px);
    }
 
    .about-info {
@@ -1607,6 +1631,8 @@ footer a {
       font-size: 0.8rem;
    }
 }
+
+/* ============  For small devices ============ */
 @media screen and (max-width: 400px) {
    .home-container .home-img {
       width: 250px;
