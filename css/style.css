@@ -436,7 +436,7 @@ header.sticky .nav-bar {
    transform: scale(1.1);
 }
 
-.home__button {
+/* .home__button {
    animation: rotate 0.7s ease-in-out both infinite;
 }
 
@@ -456,7 +456,7 @@ header.sticky .nav-bar {
    100% {
       transform: rotate(0deg) translate3d(0, 0, 0);
    }
-}
+} */
 
 /* home-img style */
 .home-img {
