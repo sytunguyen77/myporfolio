@@ -215,11 +215,5 @@ ScrollReveal().reveal("footer .group", {
    interval: 200,
 });
 
-/*=============== PRELOADER (JQUERY) ===============*/
-$(window).on("load", function () {
-   $(".loader-wrapper").delay(500).fadeOut("slow");
-   $("body").removeClass("preload");
-});
-
 /*=============== SET YEAR ===============*/
 date.innerHTML = new Date().getFullYear();

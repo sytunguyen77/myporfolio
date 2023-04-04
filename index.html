@@ -51,9 +51,9 @@
    </head>
    <body class="preload">
       <!--===== LOADER PAGE =====-->
-      <!-- <div class="loader-wrapper">
+      <div class="loader-wrapper">
          <span class="loader"><span class="loader-inner"></span></span>
-      </div> -->
+      </div>
 
       <!--=======Scroll to top button=======-->
       <div class="scrollToTop-btn flex-center">
@@ -937,6 +937,14 @@
             <p>© <span id="date"></span> Developed and Designed by Sy Tu.</p>
          </div>
       </footer>
+
+      <!---================ PRELOADER (JQUERY) ===============-->
+      <script>
+         $(window).on("load", function () {
+            $(".loader-wrapper").delay(500).fadeOut("slow");
+            $("body").removeClass("preload");
+         });
+      </script>
 
       <!--===== TYPING ANIMATION =====-->
       <script

@@ -800,6 +800,7 @@ header.sticky .nav-bar {
    padding: 5px 25px;
    transition: 0.25s ease-in-out;
    font-weight: 700 !important;
+   cursor: pointer;
 }
 
 .toggle-btn.active {
