@@ -428,12 +428,12 @@ header.sticky .nav-bar {
 }
 
 .btn:hover {
-   /* background: var(--hover-color); */
+   background: var(--hover-color);
    transform: scale(1.1);
 }
 
 .about-button:hover {
-   /* background: var(--hover-color); */
+   background: var(--hover-color);
    transform: scale(1.1);
 }
 
