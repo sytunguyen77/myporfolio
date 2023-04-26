@@ -23,7 +23,7 @@ modalCloseBtns.forEach((modalCloseBtn) => {
 
 /* ============================== TYPING ANIMATION ============================ */
 var typed = new Typed(".typing", {
-   strings: ["", "Web Designer", "Web Developer", "Front-End Developer", "Freelancer"],
+   strings: ["", "Web Designer", "Web Developer", "Front-End Developer", "IT Specialist"],
    typeSpeed: 100,
    BackSpeed: 60,
    loop: true,
