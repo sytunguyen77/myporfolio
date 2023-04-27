@@ -423,7 +423,8 @@ header.sticky .nav-bar {
    margin-top: 25px;
    padding: 20px 30px;
    letter-spacing: 1px;
-   border-radius: 5px;
+   border: none;
+   border-radius: 50px;
    transition: ease 0.5s !important;
 }
 
@@ -1269,13 +1270,6 @@ header.sticky .nav-bar {
 
 .contact-form .second-row input {
    width: 48%;
-}
-
-.contact-form .btn {
-   border: none;
-   margin-top: 0;
-   border-radius: 5px;
-   cursor: pointer;
 }
 
 /*=======Footer=======*/
