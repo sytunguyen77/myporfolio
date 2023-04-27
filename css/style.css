@@ -1009,7 +1009,18 @@ header.sticky .nav-bar {
    transition: 0.5s ease;
 }
 
-.portfolio-item .portfolio-image::before {
+.portfolio-item:hover .portfolio-image img {
+   transform: scale(1.1);
+}
+
+.portfolio-item .portfolio-image .img-wrapper {
+   transition: all 0.3s ease-in;
+   position: relative;
+   height: 320px;
+   overflow: hidden;
+}
+
+.portfolio-item .portfolio-image .img-wrapper::before {
    content: "";
    position: absolute;
    left: 0;
@@ -1021,9 +1032,10 @@ header.sticky .nav-bar {
    opacity: 0;
    transition: all ease-out 0.5s;
    transform: translateY(300px);
+   z-index: 1;
 }
 
-.portfolio-item:hover .portfolio-image::before {
+.portfolio-item:hover .portfolio-image .img-wrapper::before {
    opacity: 0.5;
    transform: translateY(0px);
 }
