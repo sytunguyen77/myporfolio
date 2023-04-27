@@ -1607,16 +1607,16 @@ footer a {
       height: 250px;
    }
 
-   .home-container .home-img .imgBx {
-      position: absolute;
-      transform: translate(80px, -520px);
-      animation: none;
+   .home-container .home-img {
+      position: relative;
+      top: -520px;
+      left: 80px;
    }
 
    .home .scroll-down {
       position: absolute;
       -webkit-transform: translateY(150px);
-      transform: translateY(150px);
+      transform: translateY(170px);
    }
 
    .media-icons {
@@ -1643,9 +1643,6 @@ footer a {
    .home-container .home-img {
       width: 250px;
       height: 230px;
-   }
-   .home-container .home-img {
-      position: absolute;
    }
 }
 
