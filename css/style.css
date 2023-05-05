@@ -456,7 +456,8 @@ header.sticky .nav-bar {
    color: var(--second-color);
    font-size: var(--small-font-size);
    font-style: italic;
-   font-family: "La Belle Aurore", cursive;
+   /* font-family: "La Belle Aurore", cursive; */
+   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
    opacity: 0.8;
 }
 
@@ -465,7 +466,8 @@ header.sticky .nav-bar {
    color: var(--second-color);
    font-size: var(--small-font-size);
    font-style: italic;
-   font-family: "La Belle Aurore", cursive;
+   /* font-family: "La Belle Aurore", cursive; */
+   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
    opacity: 0.8;
 }
 
@@ -785,7 +787,7 @@ header.sticky .nav-bar {
    color: var(--second-color);
    font-size: var(--small-font-size);
    font-style: italic;
-   font-family: "La Belle Aurore", cursive;
+   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
    opacity: 0.8;
 }
 
@@ -794,7 +796,7 @@ header.sticky .nav-bar {
    color: var(--second-color);
    font-size: var(--small-font-size);
    font-style: italic;
-   font-family: "La Belle Aurore", cursive;
+   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
    opacity: 0.8;
 }
 
