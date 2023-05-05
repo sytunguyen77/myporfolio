@@ -400,7 +400,44 @@ header.sticky .nav-bar {
    line-height: 70px;
 }
 
-.home-container .info span {
+.home-container .bounce {
+   animation-name: bounce;
+}
+
+.home-container .bouncing-letters span {
+   animation-timing-function: linear;
+   animation-duration: 1s;
+   animation-iteration-count: 1;
+   display: inline-block;
+   transition: color 0.3s;
+}
+
+.home-container .bouncing-letters span:hover {
+   color: var(--second-color);
+}
+
+@keyframes bounce {
+   20%,
+   50%,
+   80%,
+   to {
+      transform: scale(1, 1);
+   }
+   40% {
+      transform: scale(1.75, 0.65);
+   }
+   45% {
+      transform: scale(1.75, 0.65);
+   }
+   70% {
+      transform: scale(1.25, 0.75);
+   }
+   90% {
+      transform: scale(1.15, 0.85);
+   }
+}
+
+.home-container .home__typing span {
    color: var(--second-color);
    font-size: 2em;
    font-weight: 600;
@@ -412,6 +449,24 @@ header.sticky .nav-bar {
    color: var(--third-color);
    font-size: var(--normal-font-size);
    max-width: 350px;
+}
+
+.home-container .info p:before {
+   content: "<code>";
+   color: var(--second-color);
+   font-size: var(--small-font-size);
+   font-style: italic;
+   font-family: "La Belle Aurore", cursive;
+   opacity: 0.8;
+}
+
+.home-container .info p:after {
+   content: "</code>";
+   color: var(--second-color);
+   font-size: var(--small-font-size);
+   font-style: italic;
+   font-family: "La Belle Aurore", cursive;
+   opacity: 0.8;
 }
 
 .btn {
@@ -723,6 +778,24 @@ header.sticky .nav-bar {
    margin-bottom: 15px;
    padding-bottom: 25px;
    border-bottom: 2px solid var(--line-color);
+}
+
+.about-info .description p:before {
+   content: "<code>";
+   color: var(--second-color);
+   font-size: var(--small-font-size);
+   font-style: italic;
+   font-family: "La Belle Aurore", cursive;
+   opacity: 0.8;
+}
+
+.about-info .description p:after {
+   content: "</code>";
+   color: var(--second-color);
+   font-size: var(--small-font-size);
+   font-style: italic;
+   font-family: "La Belle Aurore", cursive;
+   opacity: 0.8;
 }
 
 /*=======Skills section=======*/

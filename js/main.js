@@ -21,7 +21,21 @@ modalCloseBtns.forEach((modalCloseBtn) => {
    });
 });
 
-/* ============================== TYPING ANIMATION ============================ */
+// Bouncy Letters
+document.querySelectorAll(".bouncing-letters>span").forEach((element) => {
+   element.addEventListener("mouseover", (e) => bounce(e.target));
+});
+
+function bounce(letter) {
+   if (!letter.classList.contains("bounce")) {
+      letter.classList.add("bounce");
+      setTimeout(function () {
+         letter.classList.remove("bounce");
+      }, 1000);
+   }
+}
+
+// Typing Animation
 var typed = new Typed(".typing", {
    strings: ["", "Web Designer", "Web Developer", "Front-End Developer", "IT Specialist"],
    typeSpeed: 100,
@@ -67,33 +81,6 @@ portfolioCloseBtns.forEach((portfolioCloseBtn) => {
 //         prevEl: ".swiper-button-prev",
 //     },
 // });
-
-/* ================================== LIGHT/DARK THEME ================================= */
-const themeBtn = document.querySelector(".theme-btn");
-
-themeBtn.addEventListener("click", () => {
-   document.body.classList.toggle("dark-theme");
-   themeBtn.classList.toggle("sun");
-
-   localStorage.setItem("saved-theme", getCurrentTheme());
-   localStorage.setItem("saved-icon", getCurrentIcon());
-});
-
-const getCurrentTheme = () => (document.body.classList.contains("dark-theme") ? "dark" : "light");
-const getCurrentIcon = () => (themeBtn.classList.contains("sun") ? "sun" : "moon");
-
-const savedTheme = localStorage.getItem("saved-theme");
-const savedIcon = localStorage.getItem("saved-icon");
-
-if (savedTheme) {
-   document.body.classList[savedTheme === "dark" ? "add" : "remove"]("dark-theme");
-   themeBtn.classList[savedIcon === "sun" ? "add" : "remove"]("sun");
-} else {
-   // Set dark theme as main theme
-   document.body.classList.add("dark-theme");
-   themeBtn.classList.remove("moon");
-   themeBtn.classList.add("sun");
-}
 
 //Scroll to top button
 const scrollTopBtn = document.querySelector(".scrollToTop-btn");
@@ -217,3 +204,30 @@ ScrollReveal().reveal("footer .group", {
 
 /*=============== SET YEAR ===============*/
 date.innerHTML = new Date().getFullYear();
+
+/* ================================== LIGHT/DARK THEME ================================= */
+const themeBtn = document.querySelector(".theme-btn");
+
+themeBtn.addEventListener("click", () => {
+   document.body.classList.toggle("dark-theme");
+   themeBtn.classList.toggle("sun");
+
+   localStorage.setItem("saved-theme", getCurrentTheme());
+   localStorage.setItem("saved-icon", getCurrentIcon());
+});
+
+const getCurrentTheme = () => (document.body.classList.contains("dark-theme") ? "dark" : "light");
+const getCurrentIcon = () => (themeBtn.classList.contains("sun") ? "sun" : "moon");
+
+const savedTheme = localStorage.getItem("saved-theme");
+const savedIcon = localStorage.getItem("saved-icon");
+
+if (savedTheme) {
+   document.body.classList[savedTheme === "dark" ? "add" : "remove"]("dark-theme");
+   themeBtn.classList[savedIcon === "sun" ? "add" : "remove"]("sun");
+} else {
+   // Set dark theme as main theme
+   document.body.classList.add("dark-theme");
+   themeBtn.classList.remove("moon");
+   themeBtn.classList.add("sun");
+}
