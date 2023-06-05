@@ -1144,7 +1144,7 @@ header.sticky .nav-bar {
    line-height: 19px;
    color: var(--third-color);
 }
-.portfolio-item .portfolio-content .btn-view {
+.btn-view {
    display: inline-block;
    padding: 7px 25px;
    border-radius: 50px;
