@@ -1144,7 +1144,7 @@ header.sticky .nav-bar {
    line-height: 19px;
    color: var(--third-color);
 }
-.btn-view {
+.portfolio-item .btn-view {
    display: inline-block;
    padding: 7px 25px;
    border-radius: 50px;
@@ -1256,6 +1256,27 @@ header.sticky .nav-bar {
 .portfolio-model-content li a {
    color: var(--second-color);
    text-decoration: underline;
+}
+
+.portfolio-model-content .btn-modal-view {
+   display: inline-block;
+   padding: 7px 25px;
+   border-radius: 50px;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 0.813rem;
+   line-height: 19px;
+   color: var(--second-color);
+   transition: all 0.3s ease-in-out;
+   font-weight: 400;
+   border: 1px solid var(--second-color);
+   margin-top: 1rem;
+   margin-left: 0.5rem;
+}
+
+.portfolio-model-content .btn-modal-view:hover {
+   color: #fff;
+   background: var(--second-color);
 }
 
 /*=======Get-in-touch=======*/
