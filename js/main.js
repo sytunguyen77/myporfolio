@@ -82,7 +82,7 @@ portfolioCloseBtns.forEach((portfolioCloseBtn) => {
 //     },
 // });
 
-//Scroll to top button
+// Scroll to top button
 const scrollTopBtn = document.querySelector(".scrollToTop-btn");
 
 window.addEventListener("scroll", function () {
@@ -90,8 +90,7 @@ window.addEventListener("scroll", function () {
 });
 
 scrollTopBtn.addEventListener("click", () => {
-   document.body.scrollTop = 0;
-   document.documentElement.scrollTop = 0;
+   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
 //Navigation menu items active on page scroll
