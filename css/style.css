@@ -456,7 +456,7 @@ header.sticky .nav-bar {
 }
 
 .home-container .info p:before {
-   content: "<code>";
+   content: "</>";
    color: var(--second-color);
    font-size: var(--small-font-size);
    font-style: italic;
@@ -466,7 +466,7 @@ header.sticky .nav-bar {
 }
 
 .home-container .info p:after {
-   content: "</code>";
+   content: "</>";
    color: var(--second-color);
    font-size: var(--small-font-size);
    font-style: italic;
@@ -788,19 +788,15 @@ header.sticky .nav-bar {
 }
 
 .about-info .description p:before {
-   content: "<code>";
+   content: "</>";
    color: var(--second-color);
-   font-size: var(--small-font-size);
-   font-style: italic;
    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
    opacity: 0.8;
 }
 
 .about-info .description p:after {
-   content: "</code>";
+   content: "</>";
    color: var(--second-color);
-   font-size: var(--small-font-size);
-   font-style: italic;
    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
    opacity: 0.8;
 }
