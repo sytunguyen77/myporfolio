@@ -445,6 +445,10 @@ header.sticky .nav-bar {
    display: inline;
 }
 
+.home-container .special {
+   cursor: pointer;
+}
+
 .home-container .info p {
    color: var(--third-color);
    font-size: var(--normal-font-size);
@@ -496,6 +500,7 @@ header.sticky .nav-bar {
    height: 350px;
    /* background: #333; */
    transition: 0.5s;
+   cursor: pointer;
 }
 
 .home-img .imgBx {
