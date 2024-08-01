@@ -37,7 +37,7 @@ function bounce(letter) {
 
 // Typing Animation
 var typed = new Typed(".typing", {
-  strings: ["", "Web Designer", "Web Developer", "Front-End Developer"],
+  strings: ["", "Full-Stack Developer", "Web Developer", "Front-End Developer"],
   typeSpeed: 100,
   BackSpeed: 60,
   loop: true,
