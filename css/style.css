@@ -1624,10 +1624,16 @@ footer a {
 }
 
 /* ============  For small devices ============ */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 430px) {
   .home-container .home-img {
-    width: 250px;
+    width: 200px;
     height: 230px;
+    position: relative;
+    bottom: 50px;
+  }
+
+  .bouncing-letters {
+    font-size: 2rem;
   }
 }
 
