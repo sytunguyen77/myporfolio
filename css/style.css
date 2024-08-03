@@ -197,7 +197,7 @@ li {
   cursor: pointer;
 }
 
-.fa-moon::before {
+/* .fa-moon::before {
   position: absolute;
   z-index: 1;
   left: 50%;
@@ -232,7 +232,7 @@ li {
   100% {
     transform: rotate(360deg);
   }
-}
+} */
 
 .theme-btn .fa-sun,
 .theme-btn.sun .fa-moon {
