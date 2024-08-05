@@ -36,19 +36,15 @@ function bounce(letter) {
 }
 
 // Typing Animation
-var typed = new Typed(".typing", {
-  strings: [
-    "",
-    "Web Developer",
-    "Front-End Developer",
-    "Game Enthusiast",
-    "Tech Enthusiast",
-    "Soccer Enthusiast",
-  ],
-  typeSpeed: 100,
-  BackSpeed: 60,
+const typed = new Typed(".typing", {
+  strings: ["Web Developer", "Front-End Developer", "Tech Enthusiast"],
+  typeSpeed: 50,
+  backSpeed: 50,
+  startDelay: 500,
+  backDelay: 1500,
   loop: true,
-  // cursor:NamedNodeMap;
+  showCursor: true,
+  cursorChar: "|",
 });
 
 //Portfolio section - Modal

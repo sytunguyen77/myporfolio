@@ -576,15 +576,10 @@ header.sticky .nav-bar {
   font-size: 2em;
   font-weight: 600;
   margin-bottom: 10px;
+  text-align: center;
 }
 
-.about-info .description h4 {
-  font-size: 1.3em;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.about-info .description h4 span {
+.about-info .description h3 span {
   color: var(--second-color);
 }
 
