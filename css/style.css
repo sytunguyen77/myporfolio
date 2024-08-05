@@ -560,7 +560,7 @@ header.sticky .nav-bar {
   animation: animate-wave 500ms infinite ease-in-out;
 } */
 
-@keyframes animate-wave {
+/* @keyframes animate-wave {
   0% {
     transform: rotate(0);
   }
@@ -570,7 +570,7 @@ header.sticky .nav-bar {
   100% {
     transform: rotate(0);
   }
-}
+} */
 
 .about-info .description h3 {
   font-size: 2em;
