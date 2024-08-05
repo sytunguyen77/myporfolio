@@ -555,10 +555,10 @@ header.sticky .nav-bar {
   max-width: 600px;
 }
 
-.about-info .wave {
+/* .about-info .wave {
   display: inline-block;
   animation: animate-wave 500ms infinite ease-in-out;
-}
+} */
 
 @keyframes animate-wave {
   0% {

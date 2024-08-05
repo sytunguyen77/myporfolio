@@ -155,6 +155,10 @@
   .bouncing-letters span {
     font-size: 3rem;
   }
+
+  .about-info .description h3 {
+    font-size: 1.8em;
+  }
 }
 
 /*=======Media query max-width 400px=======*/
